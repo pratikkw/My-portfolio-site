@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+img,
+svg,
+canvas,
+video {
+  max-width: 100%;
+  display: block; }
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit; }
+
+input,
+label,
+select,
+textarea {
+  font: inherit; }
+
+ul,
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit; }
+
+body {
+  min-height: 100dvh;
+  position: relative;
+  isolation: isolate;
+  font-family: "Lato", sans-serif; }
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; }
