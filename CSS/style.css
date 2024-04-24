@@ -36,7 +36,16 @@ a {
 
 :root {
   --white-clr: hsl(0, 0%, 100%);
-  --black-clr: hsl(0, 0%, 0%); }
+  --black-clr: hsl(0, 0%, 0%);
+  --primary-title: 2.5rem;
+  --secondary-title: 2rem;
+  --third-title: 1.25rem;
+  --fourth-title: 1.75rem;
+  --fifth-title: 1.5rem;
+  --primary-para: 1.25rem;
+  --secondary-para: 1.125rem;
+  --third-para: 1rem;
+  --fourth-para: 1rem; }
 
 body {
   min-height: 100dvh;
@@ -58,16 +67,18 @@ body {
   --home-gap: 0rem; }
 
 .home__section {
-  gap: var(--home-gap);
-  grid-template-columns: 1fr 1fr;
   --intro-padding: 0 4.5rem;
+  --intro-btn-padding: 0.5rem 1.5rem;
   --intro-gap: 12rem;
   --intro-txt-gap: 3.5rem;
   --intro-link-gap: 0.5rem;
   --primary-title-mg-bttm: 0.5rem;
   --intro-link-mg-bttm: 4.5rem;
-  --intro-link-fs: 0.8rem;
-  --occ-fs: 1.125rem; }
+  --intro-btn-fs: 1.125rem;
+  --intro-link-fs: 0.85rem;
+  --occ-fs: 1.125rem;
+  gap: var(--home-gap);
+  grid-template-columns: 1fr 1fr; }
 
 .intro {
   justify-content: center;
@@ -117,23 +128,33 @@ body {
   background-color: antiquewhite;
   gap: var(--about-section-gap);
   align-content: start;
-  padding: var(--about-section-padding); }
+  padding: var(--about-section-padding);
+  overflow-y: scroll; }
+
+.about__section::-webkit-scrollbar {
+  display: none; }
 
 .about__one {
   gap: var(--about-one-gap); }
 
+.skill__box {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+
 .skill {
+  text-align: center;
   border: 2px solid var(--black-clr);
   padding: var(--skill-padding);
   border-radius: 0.25rem;
   font-weight: 500; }
 
 .project {
-  --txt-box-two-padding: 3.25rem 3.5rem 0.5rem 3.5rem;
-  --project-gap: 2.25rem;
+  --txt-box-two-padding: 2rem 3.5rem 0.5rem 3.5rem;
+  --project-gap: 1rem;
   --txt-box-two-gap: 0.5rem;
+  --see-all-project-fs: 1.125rem;
+  --see-project-link-mg-bttm: 1.75rem;
   background-color: #26a69a;
-  align-content: start;
+  grid-template-rows: auto 1fr auto;
   gap: var(--project-gap); }
 
 .txt__box-two {
@@ -141,30 +162,28 @@ body {
   align-content: start;
   gap: var(--txt-box-two-gap); }
 
-.intro__btn {
-  font-size: 1.125rem;
-  border: 3px solid #000;
-  padding: 0.5rem 1.5rem;
-  border-radius: 100px; }
-
-.project__btn {
-  font-size: 1.125rem;
-  border: 3px solid #000;
-  padding: 0.5rem 1.5rem;
-  border-radius: 100px;
+.see-project__link {
   justify-self: center;
-  margin-top: 0.75rem; }
+  font-size: var(--see-all-project-fs);
+  margin-bottom: var(--see-project-link-mg-bttm); }
+
+.intro__btn {
+  font-size: var(--intro-btn-fs);
+  border: 3px solid var(--black-clr);
+  padding: var(--intro-btn-padding);
+  border-radius: 100px; }
 
 .carousel {
   --carousel-txt-padding: 0.75rem 1.5rem;
   --carousel-box-gap: 1.5rem;
-  --carousel-txt-gap: 1rem;
-  --carousel-img-height: 60dvh;
+  --carousel-txt-gap: 0.5rem;
+  --carousel-img-height: 70dvh;
   --carousel-img-width: 100%;
   --carousel-grid-auto-clm: minmax(300px, 600px);
   --fifth-title-mg-bttm: 0.5rem;
   --carousel-icon-fs: 1.5rem;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  align-self: center; }
   .carousel::-webkit-scrollbar {
     display: none; }
   .carousel__box {
@@ -180,16 +199,19 @@ body {
     width: var(--carousel-img-width);
     object-fit: cover; }
   .carousel__txt {
-    color: var(--white-clr);
     position: absolute;
     inset: 65% 0 0 0;
-    background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.27));
-    align-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .carousel__sub-txt {
     gap: var(--carousel-txt-gap);
+    color: var(--white-clr);
+    background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.27));
     padding: var(--carousel-txt-padding);
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem; }
-    .carousel__txt .txt__box-three > .fifth--title {
+    .carousel__sub-txt .txt__box-three > .fifth--title {
       margin-bottom: var(--fifth-title-mg-bttm); }
   .carousel__links {
     justify-content: flex-end; }
@@ -197,36 +219,93 @@ body {
     font-size: var(--carousel-icon-fs); }
 
 .primary--title {
-  font-size: 2.5rem; }
+  font-size: var(--primary-title); }
 
 .secondary--title {
-  font-size: 2rem; }
+  font-size: var(--secondary-title); }
 
 .third--title {
-  font-size: 1.25rem; }
+  font-size: var(--third-title); }
 
 .fourth--title {
-  font-size: 1.75rem; }
+  font-size: var(--fourth-title); }
 
 .fifth--title {
-  font-size: 1.5rem; }
+  font-size: var(--fifth-title);
+  font-weight: 800;
+  letter-spacing: 1px; }
 
 .para--primary {
-  font-size: 1.25rem;
+  font-size: var(--primary-para);
   font-weight: 600;
   line-height: 1.6; }
 
 .para--secondary {
-  font-size: 1.125rem;
+  font-size: var(--secondary-para);
   line-height: 1.5; }
 
 .para--third {
-  font-size: 1rem; }
+  font-size: var(--third-para); }
 
 .para--fourth {
-  font-size: 1rem; }
+  font-size: var(--fourth-para);
+  line-height: 1.3; }
 
 .sticky {
   position: sticky;
   top: 0;
   height: 100dvh; }
+
+.hide {
+  display: none; }
+
+@media only screen and (max-width: 1200px) {
+  .home__section {
+    grid-template-columns: 1fr;
+    --intro-gap: 10rem;
+    --intro-txt-gap: 4rem; }
+  .intro {
+    position: sticky;
+    top: 0;
+    height: 100dvh; }
+  .others {
+    position: sticky;
+    top: 0;
+    grid-column: auto; }
+  .about__section > * {
+    max-width: 65ch;
+    width: 100%; } }
+
+@media only screen and (max-width: 700px) {
+  :root {
+    --primary-para: 1.125rem; }
+  .home__section {
+    --intro-padding: 2rem;
+    --intro-link-mg-bttm: 1.5rem; }
+  .about__section {
+    --about-section-padding: 2.5rem 2rem;
+    --about-one-gap: 1.5rem; }
+  .project {
+    --txt-box-two-padding: 2.5rem 2rem 0.5rem 2rem; } }
+
+@media only screen and (max-width: 500px) {
+  :root {
+    --primary-title: 2.25rem;
+    --fifth-title: 1.35rem;
+    --primary-para: 1.1rem;
+    --secondary-para: 1.1rem;
+    --third-para: 0.95rem;
+    --fourth-para: 0.95rem; }
+  .home__section {
+    --intro-padding: 2rem 1.5rem;
+    --intro-btn-fs: 1.1rem;
+    --intro-link-fs: 0.825rem;
+    --occ-fs: 1.1rem; }
+  .about__section {
+    --about-section-padding: 2.25rem 1.5rem;
+    --about-one-gap: 1.25rem; }
+  .project {
+    --txt-box-two-padding: 2.25rem 1.5rem 0.5rem 1.5rem;
+    --see-project-link-mg-bttm: 3rem; }
+  .carousel {
+    --carousel-img-height: 65dvh; } }

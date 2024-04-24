@@ -43,6 +43,18 @@ a {
 :root {
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
+
+  // FONT
+  --primary-title: 2.5rem;
+  --secondary-title: 2rem;
+  --third-title: 1.25rem;
+  --fourth-title: 1.75rem;
+  --fifth-title: 1.5rem;
+
+  --primary-para: 1.25rem;
+  --secondary-para: 1.125rem;
+  --third-para: 1rem;
+  --fourth-para: 1rem;
 }
 
 body {

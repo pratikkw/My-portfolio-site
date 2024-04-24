@@ -1,0 +1,94 @@
+@media only screen and (max-width: 1200px) {
+  .home__section {
+    grid-template-columns: 1fr;
+
+    // GAP
+    --intro-gap: 10rem;
+    --intro-txt-gap: 4rem;
+  }
+
+  .intro {
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+  }
+
+  .others {
+    position: sticky;
+    top: 0;
+    grid-column: auto;
+  }
+
+  .about__section > * {
+    max-width: 65ch;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  :root {
+    --primary-para: 1.125rem;
+  }
+
+  .home__section {
+    --intro-padding: 2rem;
+
+    // MARGIN
+    --intro-link-mg-bttm: 1.5rem;
+  }
+
+  .about__section {
+    // PADDING
+    --about-section-padding: 2.5rem 2rem;
+
+    // GAP
+    --about-one-gap: 1.5rem;
+  }
+
+  .about__section > * {
+  }
+
+  .project {
+    --txt-box-two-padding: 2.5rem 2rem 0.5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  :root {
+    --primary-title: 2.25rem;
+    --fifth-title: 1.35rem;
+
+    --primary-para: 1.1rem;
+    --secondary-para: 1.1rem;
+    --third-para: 0.95rem;
+    --fourth-para: 0.95rem;
+  }
+
+  .home__section {
+    // PADDING
+    --intro-padding: 2rem 1.5rem;
+
+    // FONT-SIZE
+    --intro-btn-fs: 1.1rem;
+    --intro-link-fs: 0.825rem;
+    --occ-fs: 1.1rem;
+  }
+
+  .about__section {
+    // PADDING
+    --about-section-padding: 2.25rem 1.5rem;
+
+    // GAP
+    --about-one-gap: 1.25rem;
+  }
+
+  .project {
+    --txt-box-two-padding: 2.25rem 1.5rem 0.5rem 1.5rem;
+
+    --see-project-link-mg-bttm: 3rem;
+  }
+
+  .carousel {
+    --carousel-img-height: 65dvh;
+  }
+}
