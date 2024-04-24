@@ -104,11 +104,6 @@
   gap: var(--about-section-gap);
   align-content: start;
   padding: var(--about-section-padding);
-
-  overflow-y: scroll;
-  position: sticky;
-  top: 0;
-  height: 100vh;
 }
 
 .about__section::-webkit-scrollbar {

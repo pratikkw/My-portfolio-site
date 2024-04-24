@@ -10,7 +10,7 @@
   .intro {
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: 100dvh;
   }
 
   .others {
@@ -35,6 +35,12 @@
 
     // MARGIN
     --intro-link-mg-bttm: 1.5rem;
+  }
+
+  .others__subbox > * {
+    position: relative;
+    height: auto;
+    min-height: 100dvh;
   }
 
   .about__section {
