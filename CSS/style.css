@@ -129,7 +129,10 @@ body {
   gap: var(--about-section-gap);
   align-content: start;
   padding: var(--about-section-padding);
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  position: sticky;
+  top: 0;
+  height: 100vh; }
 
 .about__section::-webkit-scrollbar {
   display: none; }
@@ -254,7 +257,7 @@ body {
 .sticky {
   position: sticky;
   top: 0;
-  min-height: 100vh; }
+  height: 100vh; }
 
 .hide {
   display: none; }
@@ -267,7 +270,7 @@ body {
   .intro {
     position: sticky;
     top: 0;
-    min-height: 100vh; }
+    height: 100vh; }
   .others {
     position: sticky;
     top: 0;
