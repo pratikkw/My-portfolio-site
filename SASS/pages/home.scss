@@ -1,20 +1,38 @@
 .main {
+  // GAP
+  --home-gap: 0rem;
 }
 
 .container {
 }
 
 .home__section {
-  gap: 0rem;
+  gap: var(--home-gap);
   grid-template-columns: 1fr 1fr;
+
+  // PADDING
+  --intro-padding: 0 4.5rem;
+
+  // GAP
+  --intro-gap: 12rem;
+  --intro-txt-gap: 3.5rem;
+  --intro-link-gap: 0.5rem;
+
+  // MARGIN
+  --primary-title-mg-bttm: 0.5rem;
+  --intro-link-mg-bttm: 4.5rem;
+
+  // FONT-SIZE
+  --intro-link-fs: 0.8rem;
+  --occ-fs: 1.125rem;
 }
 
 .intro {
   justify-content: center;
   grid-template-rows: 1fr auto;
 
-  padding: 0 4.5rem;
-  gap: 12rem;
+  padding: var(--intro-padding);
+  gap: var(--intro-gap);
 
   position: fixed;
   inset: 0 50% 0 0;
@@ -26,24 +44,28 @@
 }
 
 .intro__txt {
-  gap: 3.5rem;
+  gap: var(--intro-txt-gap);
   justify-items: flex-start;
 
   align-self: flex-end;
 }
 
 .txt__box > .primary--title {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--primary-title-mg-bttm);
+}
+
+.occ {
+  font-size: var(--occ-fs);
 }
 
 .intro__link {
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: var(--intro-link-fs);
 
   align-self: flex-end;
-  gap: 0.5rem;
+  gap: var(--intro-link-gap);
 
-  margin-bottom: 4.5rem;
+  margin-bottom: var(--intro-link-mg-bttm);
 }
 
 .social-media__link {
@@ -54,9 +76,10 @@
 
 .link {
   font-weight: 400;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--black-clr);
 }
 
+// Profile Image
 .profile-img {
   background-image: url(../../Image/img-4.jpg);
   background-position: center;
@@ -66,15 +89,23 @@
 
 // About Section
 .about__section {
+  // PADDING
+  --about-section-padding: 3.25rem 3.5rem;
+  --skill-padding: 0.5rem 1rem;
+
+  // GAP
+  --about-section-gap: 2.5rem;
+  --about-one-gap: 2rem;
+
   background-color: antiquewhite;
 
-  gap: 2.5rem;
+  gap: var(--about-section-gap);
   align-content: start;
-  padding: 3.25rem 3.5rem;
+  padding: var(--about-section-padding);
 }
 
 .about__one {
-  gap: 2rem;
+  gap: var(--about-one-gap);
 }
 
 .about__two {
@@ -87,8 +118,28 @@
 }
 
 .skill {
-  border: 2px solid #000;
-  padding: 0.5rem 1rem;
+  border: 2px solid var(--black-clr);
+  padding: var(--skill-padding);
   border-radius: 0.25rem;
   font-weight: 500;
+}
+
+// Projects
+.project {
+  // PADDING
+  --txt-box-two-padding: 3.25rem 3.5rem 0.5rem 3.5rem;
+
+  // GAP
+  --project-gap: 2.25rem;
+  --txt-box-two-gap: 0.5rem;
+
+  background-color: #26a69a;
+  align-content: start;
+  gap: var(--project-gap);
+}
+
+.txt__box-two {
+  padding: var(--txt-box-two-padding);
+  align-content: start;
+  gap: var(--txt-box-two-gap);
 }
