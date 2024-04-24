@@ -1,3 +1,11 @@
+.body--lock {
+  // overflow: hidden;
+}
+
+.preloader--hide {
+  display: none;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -6,4 +14,8 @@
 
 .hide {
   display: none;
+}
+
+.preloader--deactive {
+  opacity: 0;
 }

@@ -38,6 +38,7 @@ a {
   color: inherit; }
 
 :root {
+  --loading-page-bk-clr: hsl(0, 0%, 5%);
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
   --primary-title: 2.5rem;
@@ -169,6 +170,33 @@ body {
   font-size: var(--see-all-project-fs);
   margin-bottom: var(--see-project-link-mg-bttm); }
 
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  color: var(--white-clr);
+  background-color: var(--loading-page-bk-clr);
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.5s;
+  justify-content: center;
+  text-align: center;
+  gap: 0rem; }
+  .preloader .pre-txt {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-inline: 1.5rem; }
+  .preloader .pre-span-two {
+    margin-left: 0.5rem;
+    font-weight: 200; }
+
+.pre-span-one {
+  opacity: 1;
+  transition: opacity ease-in 0.3s; }
+
+.pre-span-two {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.2s; }
+
 .intro__btn {
   font-size: var(--intro-btn-fs);
   border: 3px solid var(--black-clr);
@@ -253,6 +281,9 @@ body {
   font-size: var(--fourth-para);
   line-height: 1.3; }
 
+.preloader--hide {
+  display: none; }
+
 .sticky {
   position: sticky;
   top: 0;
@@ -260,6 +291,9 @@ body {
 
 .hide {
   display: none; }
+
+.preloader--deactive {
+  opacity: 0; }
 
 @media only screen and (max-width: 1200px) {
   .home__section {

@@ -1,0 +1,36 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+
+  color: var(--white-clr);
+  background-color: var(--loading-page-bk-clr);
+
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.5s;
+
+  justify-content: center;
+  text-align: center;
+  gap: 0rem;
+
+  & .pre-txt {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-inline: 1.5rem;
+  }
+
+  & .pre-span-two {
+    margin-left: 0.5rem;
+    font-weight: 200;
+  }
+}
+
+.pre-span-one {
+  opacity: 1;
+  transition: opacity ease-in 0.3s;
+}
+
+.pre-span-two {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.2s;
+}
