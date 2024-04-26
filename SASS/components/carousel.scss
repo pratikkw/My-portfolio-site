@@ -17,19 +17,19 @@
   // FIFTH
   --carousel-icon-fs: 1.5rem;
 
-  overflow-x: scroll;
+  overflow: hidden;
   align-self: center;
 
   &::-webkit-scrollbar {
     display: none;
   }
 
-  &__box {
-    display: grid;
-    gap: var(--carousel-box-gap);
-    grid-auto-flow: column;
-    grid-auto-columns: var(--carousel-grid-auto-clm);
-  }
+  display: grid;
+  gap: var(--carousel-box-gap);
+  grid-auto-flow: column;
+  grid-auto-columns: var(--carousel-grid-auto-clm);
+
+  scroll-behavior: smooth;
 
   &__card {
     position: relative;
@@ -44,7 +44,7 @@
 
   &__txt {
     position: absolute;
-    inset: 65% 0 0 0;
+    inset: 0;
 
     display: flex;
     flex-direction: column;

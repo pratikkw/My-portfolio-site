@@ -46,6 +46,8 @@ a {
 
 :root {
   --loading-page-bk-clr: hsl(0, 0%, 5%);
+  --scroll-thumb-bk-clr: #333333;
+  --scroll-track-bk-clr: #b3b3b3;
 
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
@@ -61,6 +63,9 @@ a {
   --secondary-para: 1.125rem;
   --third-para: 1rem;
   --fourth-para: 1rem;
+
+  // HIDE/SHOW
+  --body-scroll-hide: none;
 }
 
 body {
@@ -81,4 +86,17 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  display: var(--body-scroll-hide);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-bk-clr);
+}
+
+body::-webkit-scrollbar-track-piece {
+  background-color: var(--scroll-track-bk-clr);
 }

@@ -39,6 +39,8 @@ a {
 
 :root {
   --loading-page-bk-clr: hsl(0, 0%, 5%);
+  --scroll-thumb-bk-clr: #333333;
+  --scroll-track-bk-clr: #b3b3b3;
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
   --primary-title: 2.5rem;
@@ -49,7 +51,8 @@ a {
   --primary-para: 1.25rem;
   --secondary-para: 1.125rem;
   --third-para: 1rem;
-  --fourth-para: 1rem; }
+  --fourth-para: 1rem;
+  --body-scroll-hide: none; }
 
 body {
   min-height: 100dvh;
@@ -66,6 +69,16 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem; }
+
+body::-webkit-scrollbar {
+  width: 5px;
+  display: var(--body-scroll-hide); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-bk-clr); }
+
+body::-webkit-scrollbar-track-piece {
+  background-color: var(--scroll-track-bk-clr); }
 
 .main {
   --home-gap: 0rem; }
@@ -212,15 +225,15 @@ body {
   --carousel-grid-auto-clm: minmax(300px, 600px);
   --fifth-title-mg-bttm: 0.5rem;
   --carousel-icon-fs: 1.5rem;
-  overflow-x: scroll;
-  align-self: center; }
+  overflow: hidden;
+  align-self: center;
+  display: grid;
+  gap: var(--carousel-box-gap);
+  grid-auto-flow: column;
+  grid-auto-columns: var(--carousel-grid-auto-clm);
+  scroll-behavior: smooth; }
   .carousel::-webkit-scrollbar {
     display: none; }
-  .carousel__box {
-    display: grid;
-    gap: var(--carousel-box-gap);
-    grid-auto-flow: column;
-    grid-auto-columns: var(--carousel-grid-auto-clm); }
   .carousel__card {
     position: relative; }
   .carousel__img > img {
@@ -230,7 +243,7 @@ body {
     object-fit: cover; }
   .carousel__txt {
     position: absolute;
-    inset: 65% 0 0 0;
+    inset: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
@@ -284,16 +297,21 @@ body {
 .preloader--hide {
   display: none; }
 
+.preloader--deactive {
+  opacity: 0; }
+
 .sticky {
   position: sticky;
   top: 0;
   height: 100dvh; }
 
+.carousel--selected {
+  cursor: grab;
+  user-select: none;
+  scroll-behavior: auto; }
+
 .hide {
   display: none; }
-
-.preloader--deactive {
-  opacity: 0; }
 
 @media only screen and (max-width: 1200px) {
   .home__section {

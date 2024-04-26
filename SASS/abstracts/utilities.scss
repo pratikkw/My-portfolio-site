@@ -1,9 +1,9 @@
-.body--lock {
-  // overflow: hidden;
-}
-
 .preloader--hide {
   display: none;
+}
+
+.preloader--deactive {
+  opacity: 0;
 }
 
 .sticky {
@@ -12,10 +12,12 @@
   height: 100dvh;
 }
 
-.hide {
-  display: none;
+.carousel--selected {
+  cursor: grab;
+  user-select: none;
+  scroll-behavior: auto;
 }
 
-.preloader--deactive {
-  opacity: 0;
+.hide {
+  display: none;
 }
