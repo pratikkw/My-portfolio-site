@@ -70,16 +70,6 @@ body {
   grid-template-columns: 1fr;
   gap: 1rem; }
 
-body::-webkit-scrollbar {
-  width: 5px;
-  display: var(--body-scroll-hide); }
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-bk-clr); }
-
-body::-webkit-scrollbar-track-piece {
-  background-color: var(--scroll-track-bk-clr); }
-
 .main {
   --home-gap: 0rem; }
 
@@ -170,7 +160,7 @@ body::-webkit-scrollbar-track-piece {
   --see-all-project-fs: 1.125rem;
   --see-project-link-mg-bttm: 1.75rem;
   background-color: #26a69a;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto;
   gap: var(--project-gap); }
 
 .txt__box-two {
@@ -183,33 +173,6 @@ body::-webkit-scrollbar-track-piece {
   font-size: var(--see-all-project-fs);
   margin-bottom: var(--see-project-link-mg-bttm); }
 
-.preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-  color: var(--white-clr);
-  background-color: var(--loading-page-bk-clr);
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.5s;
-  justify-content: center;
-  text-align: center;
-  gap: 0rem; }
-  .preloader .pre-txt {
-    font-size: 2rem;
-    font-weight: 400;
-    padding-inline: 1.5rem; }
-  .preloader .pre-span-two {
-    margin-left: 0.5rem;
-    font-weight: 200; }
-
-.pre-span-one {
-  opacity: 1;
-  transition: opacity ease-in 0.3s; }
-
-.pre-span-two {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.2s; }
-
 .intro__btn {
   font-size: var(--intro-btn-fs);
   border: 3px solid var(--black-clr);
@@ -220,22 +183,17 @@ body::-webkit-scrollbar-track-piece {
   --carousel-txt-padding: 0.75rem 1.5rem;
   --carousel-box-gap: 1.5rem;
   --carousel-txt-gap: 0.5rem;
-  --carousel-img-height: 70dvh;
+  --carousel-img-height: 65dvh;
   --carousel-img-width: 100%;
-  --carousel-grid-auto-clm: minmax(300px, 600px);
   --fifth-title-mg-bttm: 0.5rem;
   --carousel-icon-fs: 1.5rem;
-  overflow: hidden;
-  align-self: center;
-  display: grid;
-  gap: var(--carousel-box-gap);
-  grid-auto-flow: column;
-  grid-auto-columns: var(--carousel-grid-auto-clm);
-  scroll-behavior: smooth; }
-  .carousel::-webkit-scrollbar {
-    display: none; }
+  width: 100%; }
+  .carousel .swiper-wrapper {
+    width: 100%;
+    height: auto; }
   .carousel__card {
-    position: relative; }
+    position: relative;
+    user-select: none; }
   .carousel__img > img {
     border-radius: 0.5rem;
     height: var(--carousel-img-height);
@@ -294,21 +252,10 @@ body::-webkit-scrollbar-track-piece {
   font-size: var(--fourth-para);
   line-height: 1.3; }
 
-.preloader--hide {
-  display: none; }
-
-.preloader--deactive {
-  opacity: 0; }
-
 .sticky {
   position: sticky;
   top: 0;
   height: 100dvh; }
-
-.carousel--selected {
-  cursor: grab;
-  user-select: none;
-  scroll-behavior: auto; }
 
 .hide {
   display: none; }

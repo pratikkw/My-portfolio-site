@@ -1,48 +1,38 @@
 "use strict";
 
-const body = document.body;
-const preloader = document.querySelector(".preloader");
-const preloaderTextOne = document.querySelector(".pre-span-one");
-const preloaderTextTwo = document.querySelector(".pre-span-two");
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  grabCursor: true,
 
-const carousel = document.querySelector(".carousel");
+  breakpoints: {
+    1199: {
+      slidesPerView: 2.25,
+      spaceBetween: 16,
+    },
+    1000: {
+      slidesPerView: 3.5,
+      spaceBetween: 16,
+    },
 
-let isDragging = false;
-let startX = "";
-let startscrollLeft = "";
+    800: {
+      slidesPerView: 2.75,
+      spaceBetween: 16,
+    },
 
-window.addEventListener("load", function () {
-  setTimeout(() => {
-    preloaderTextOne.classList.add("preloader--deactive");
-    preloaderTextTwo.classList.add("preloader--deactive");
-    preloader.classList.add("preloader--deactive");
-  }, 1000);
+    700: {
+      slidesPerView: 2.5,
+      spaceBetween: 16,
+    },
 
-  setTimeout(() => {
-    preloader.classList.add("preloader--hide");
-    document.documentElement.style.setProperty("--body-scroll-hide", "block");
-  }, 2000);
+    500: {
+      slidesPerView: 1.75,
+      spaceBetween: 16,
+    },
+
+    300: {
+      slidesPerView: 1.25,
+      spaceBetween: 16,
+    },
+  },
 });
-
-// Carousel
-
-const startDragging = function (e) {
-  isDragging = true;
-  startX = e.pageX;
-  startscrollLeft = carousel.scrollLeft;
-  carousel.classList.add("carousel--selected");
-};
-
-const dragging = function (e) {
-  if (!isDragging) return;
-  carousel.scrollLeft = startscrollLeft - (e.pageX - startX);
-};
-
-const stopDragging = function () {
-  isDragging = false;
-  carousel.classList.remove("carousel--selected");
-};
-
-carousel.addEventListener("mousedown", startDragging);
-carousel.addEventListener("mousemove", dragging);
-carousel.addEventListener("mouseup", stopDragging);

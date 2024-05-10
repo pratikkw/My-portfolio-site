@@ -7,9 +7,8 @@
   --carousel-txt-gap: 0.5rem;
 
   // HEIGHT & WIDTH
-  --carousel-img-height: 70dvh;
+  --carousel-img-height: 65dvh;
   --carousel-img-width: 100%;
-  --carousel-grid-auto-clm: minmax(300px, 600px);
 
   // MARGIN
   --fifth-title-mg-bttm: 0.5rem;
@@ -17,22 +16,16 @@
   // FIFTH
   --carousel-icon-fs: 1.5rem;
 
-  overflow: hidden;
-  align-self: center;
+  width: 100%;
 
-  &::-webkit-scrollbar {
-    display: none;
+  .swiper-wrapper {
+    width: 100%;
+    height: auto;
   }
-
-  display: grid;
-  gap: var(--carousel-box-gap);
-  grid-auto-flow: column;
-  grid-auto-columns: var(--carousel-grid-auto-clm);
-
-  scroll-behavior: smooth;
 
   &__card {
     position: relative;
+    user-select: none;
   }
 
   &__img > img {

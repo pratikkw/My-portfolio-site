@@ -1,21 +1,7 @@
-.preloader--hide {
-  display: none;
-}
-
-.preloader--deactive {
-  opacity: 0;
-}
-
 .sticky {
   position: sticky;
   top: 0;
   height: 100dvh;
-}
-
-.carousel--selected {
-  cursor: grab;
-  user-select: none;
-  scroll-behavior: auto;
 }
 
 .hide {

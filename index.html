@@ -12,22 +12,29 @@
       rel="stylesheet"
     />
 
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- SWIPER JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
 
     <!-- JS -->
     <script src="JS/script.js" defer></script>
   </head>
   <body class="body--lock">
-    <div class="preloader flex">
-      <p class="pre-txt">
-        <span class="pre-span-one">Pratik Kesharwani</span>
-        <span class="pre-span pre-span-two">Portfolio</span>
-      </p>
-    </div>
     <main class="main">
       <div class="container">
         <section class="home__section section grid">
+          <!-- INTRO -->
           <article class="intro grid">
             <div class="intro__txt grid">
               <div class="txt__box">
@@ -66,6 +73,8 @@
               >
             </div>
           </article>
+
+          <!-- ABOUT... -->
           <section class="others">
             <!-- Profile Img -->
             <div class="profile-img sticky"></div>
@@ -114,308 +123,310 @@
                 </div>
 
                 <!-- <div class="carousel"> -->
-                <ul class="carousel">
-                  <!-- CARD 01 -->
-                  <li class="carousel__card">
-                    <div class="carousel__img">
-                      <img src="Image/cafe.webp" alt="" />
-                    </div>
-                    <div class="carousel__txt">
-                      <div class="carousel__sub-txt grid">
-                        <div class="txt__box-three">
-                          <h5 class="fifth--title">90s Cafe</h5>
-                          <p class="para--fourth">
-                            Step into the 90s cafe, where every corner echoes
-                            with nostalgia.
-                          </p>
-                        </div>
+                <ul class="carousel swiper">
+                  <div class="swiper-wrapper">
+                    <!-- CARD 01 -->
+                    <li class="carousel__card swiper-slide">
+                      <div class="carousel__img">
+                        <img src="Image/cafe.webp" alt="" />
+                      </div>
+                      <div class="carousel__txt">
+                        <div class="carousel__sub-txt grid">
+                          <div class="txt__box-three">
+                            <h5 class="fifth--title">90s Cafe</h5>
+                            <p class="para--fourth">
+                              Step into the 90s cafe, where every corner echoes
+                              with nostalgia.
+                            </p>
+                          </div>
 
-                        <div class="carousel__links flex">
-                          <a
-                            href="https://music-playerx.netlify.app/"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="link-outline"
-                            ></ion-icon
-                          ></a>
-                          <a
-                            href="https://github.com/pratikkw/Music-Player"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="logo-github"
-                            ></ion-icon
-                          ></a>
-                          <a href="#" class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="ellipsis-horizontal-outline"
-                            ></ion-icon
-                          ></a>
+                          <div class="carousel__links flex">
+                            <a
+                              href="https://music-playerx.netlify.app/"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="link-outline"
+                              ></ion-icon
+                            ></a>
+                            <a
+                              href="https://github.com/pratikkw/Music-Player"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="logo-github"
+                              ></ion-icon
+                            ></a>
+                            <a href="#" class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="ellipsis-horizontal-outline"
+                              ></ion-icon
+                            ></a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <!-- CARD 02 -->
-                  <li class="carousel__card">
-                    <div class="carousel__img">
-                      <img src="Image/snowboarding.jpg" alt="" />
-                    </div>
-                    <div class="carousel__txt">
-                      <div class="carousel__sub-txt grid">
-                        <div class="txt__box-three">
-                          <h5 class="fifth--title">SnowBoarding</h5>
-                          <p class="para--fourth">
-                            It is more than just a sport. It's a lifestyle, a
-                            thrilling dance with the mountains.
-                          </p>
-                        </div>
-                        <div class="carousel__links flex">
-                          <a
-                            href="https://music-playerx.netlify.app/"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="link-outline"
-                            ></ion-icon
-                          ></a>
-                          <a
-                            href="https://github.com/pratikkw/Music-Player"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="logo-github"
-                            ></ion-icon
-                          ></a>
-                          <a href="#" class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="ellipsis-horizontal-outline"
-                            ></ion-icon
-                          ></a>
+                    </li>
+                    <!-- CARD 02 -->
+                    <li class="carousel__card swiper-slide">
+                      <div class="carousel__img">
+                        <img src="Image/snowboarding.jpg" alt="" />
+                      </div>
+                      <div class="carousel__txt">
+                        <div class="carousel__sub-txt grid">
+                          <div class="txt__box-three">
+                            <h5 class="fifth--title">SnowBoarding</h5>
+                            <p class="para--fourth">
+                              It is more than just a sport. It's a lifestyle, a
+                              thrilling dance with the mountains.
+                            </p>
+                          </div>
+                          <div class="carousel__links flex">
+                            <a
+                              href="https://music-playerx.netlify.app/"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="link-outline"
+                              ></ion-icon
+                            ></a>
+                            <a
+                              href="https://github.com/pratikkw/Music-Player"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="logo-github"
+                              ></ion-icon
+                            ></a>
+                            <a href="#" class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="ellipsis-horizontal-outline"
+                              ></ion-icon
+                            ></a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <!-- CARD 03 -->
-                  <li class="carousel__card">
-                    <div class="carousel__img">
-                      <img src="Image/art.jpg" alt="" />
-                    </div>
-                    <div class="carousel__txt">
-                      <div class="carousel__sub-txt grid">
-                        <div class="txt__box-three">
-                          <h5 class="fifth--title">Art & Painting</h5>
-                          <p class="para--fourth">
-                            It have been integral parts of human expression for
-                            millennia & more.
-                          </p>
-                        </div>
-                        <div class="carousel__links flex">
-                          <a
-                            href="https://music-playerx.netlify.app/"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="link-outline"
-                            ></ion-icon
-                          ></a>
-                          <a
-                            href="https://github.com/pratikkw/Music-Player"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="logo-github"
-                            ></ion-icon
-                          ></a>
-                          <a href="#" class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="ellipsis-horizontal-outline"
-                            ></ion-icon
-                          ></a>
+                    </li>
+                    <!-- CARD 03 -->
+                    <li class="carousel__card swiper-slide">
+                      <div class="carousel__img">
+                        <img src="Image/art.jpg" alt="" />
+                      </div>
+                      <div class="carousel__txt">
+                        <div class="carousel__sub-txt grid">
+                          <div class="txt__box-three">
+                            <h5 class="fifth--title">Art & Painting</h5>
+                            <p class="para--fourth">
+                              It have been integral parts of human expression
+                              for millennia & more.
+                            </p>
+                          </div>
+                          <div class="carousel__links flex">
+                            <a
+                              href="https://music-playerx.netlify.app/"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="link-outline"
+                              ></ion-icon
+                            ></a>
+                            <a
+                              href="https://github.com/pratikkw/Music-Player"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="logo-github"
+                              ></ion-icon
+                            ></a>
+                            <a href="#" class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="ellipsis-horizontal-outline"
+                              ></ion-icon
+                            ></a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <!-- CARD 04 -->
-                  <li class="carousel__card">
-                    <div class="carousel__img">
-                      <img src="Image/bank.webp" alt="" />
-                    </div>
-                    <div class="carousel__txt">
-                      <div class="carousel__sub-txt grid">
-                        <div class="txt__box-three">
-                          <h5 class="fifth--title">Banking</h5>
-                          <p class="para--fourth">
-                            It is a cornerstone of modern economies.
-                          </p>
-                        </div>
-                        <div class="carousel__links flex">
-                          <a
-                            href="https://music-playerx.netlify.app/"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="link-outline"
-                            ></ion-icon
-                          ></a>
-                          <a
-                            href="https://github.com/pratikkw/Music-Player"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="logo-github"
-                            ></ion-icon
-                          ></a>
-                          <a href="#" class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="ellipsis-horizontal-outline"
-                            ></ion-icon
-                          ></a>
+                    </li>
+                    <!-- CARD 04 -->
+                    <li class="carousel__card swiper-slide">
+                      <div class="carousel__img">
+                        <img src="Image/bank.webp" alt="" />
+                      </div>
+                      <div class="carousel__txt">
+                        <div class="carousel__sub-txt grid">
+                          <div class="txt__box-three">
+                            <h5 class="fifth--title">Banking</h5>
+                            <p class="para--fourth">
+                              It is a cornerstone of modern economies.
+                            </p>
+                          </div>
+                          <div class="carousel__links flex">
+                            <a
+                              href="https://music-playerx.netlify.app/"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="link-outline"
+                              ></ion-icon
+                            ></a>
+                            <a
+                              href="https://github.com/pratikkw/Music-Player"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="logo-github"
+                              ></ion-icon
+                            ></a>
+                            <a href="#" class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="ellipsis-horizontal-outline"
+                              ></ion-icon
+                            ></a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <!-- CARD 05 -->
-                  <li class="carousel__card">
-                    <div class="carousel__img">
-                      <img src="Image/train.webp" alt="" />
-                    </div>
-                    <div class="carousel__txt">
-                      <div class="carousel__sub-txt grid">
-                        <div class="txt__box-three">
-                          <h5 class="fifth--title">Bullet Train</h5>
-                          <p class="para--fourth">
-                            The hallmark of the bullet train is its remarkable
-                            speed and efficiency.
-                          </p>
-                        </div>
-                        <div class="carousel__links flex">
-                          <a
-                            href="https://music-playerx.netlify.app/"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="link-outline"
-                            ></ion-icon
-                          ></a>
-                          <a
-                            href="https://github.com/pratikkw/Music-Player"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="logo-github"
-                            ></ion-icon
-                          ></a>
-                          <a href="#" class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="ellipsis-horizontal-outline"
-                            ></ion-icon
-                          ></a>
+                    </li>
+                    <!-- CARD 05 -->
+                    <li class="carousel__card swiper-slide">
+                      <div class="carousel__img">
+                        <img src="Image/train.webp" alt="" />
+                      </div>
+                      <div class="carousel__txt">
+                        <div class="carousel__sub-txt grid">
+                          <div class="txt__box-three">
+                            <h5 class="fifth--title">Bullet Train</h5>
+                            <p class="para--fourth">
+                              The hallmark of the bullet train is its remarkable
+                              speed and efficiency.
+                            </p>
+                          </div>
+                          <div class="carousel__links flex">
+                            <a
+                              href="https://music-playerx.netlify.app/"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="link-outline"
+                              ></ion-icon
+                            ></a>
+                            <a
+                              href="https://github.com/pratikkw/Music-Player"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="logo-github"
+                              ></ion-icon
+                            ></a>
+                            <a href="#" class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="ellipsis-horizontal-outline"
+                              ></ion-icon
+                            ></a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <!-- CARD 06 -->
-                  <li class="carousel__card">
-                    <div class="carousel__img">
-                      <img src="Image/model.jpg" alt="" />
-                    </div>
-                    <div class="carousel__txt">
-                      <div class="carousel__sub-txt grid">
-                        <div class="txt__box-three">
-                          <h5 class="fifth--title">Fashion Model</h5>
-                          <p class="para--fourth">
-                            They are individuals who showcase clothing,
-                            accessories to promote brands.
-                          </p>
-                        </div>
-                        <div class="carousel__links flex">
-                          <a
-                            href="https://music-playerx.netlify.app/"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="link-outline"
-                            ></ion-icon
-                          ></a>
-                          <a
-                            href="https://github.com/pratikkw/Music-Player"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="logo-github"
-                            ></ion-icon
-                          ></a>
-                          <a href="#" class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="ellipsis-horizontal-outline"
-                            ></ion-icon
-                          ></a>
+                    </li>
+                    <!-- CARD 06 -->
+                    <li class="carousel__card swiper-slide">
+                      <div class="carousel__img">
+                        <img src="Image/model.jpg" alt="" />
+                      </div>
+                      <div class="carousel__txt">
+                        <div class="carousel__sub-txt grid">
+                          <div class="txt__box-three">
+                            <h5 class="fifth--title">Fashion Model</h5>
+                            <p class="para--fourth">
+                              They are individuals who showcase clothing,
+                              accessories to promote brands.
+                            </p>
+                          </div>
+                          <div class="carousel__links flex">
+                            <a
+                              href="https://music-playerx.netlify.app/"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="link-outline"
+                              ></ion-icon
+                            ></a>
+                            <a
+                              href="https://github.com/pratikkw/Music-Player"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="logo-github"
+                              ></ion-icon
+                            ></a>
+                            <a href="#" class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="ellipsis-horizontal-outline"
+                              ></ion-icon
+                            ></a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <!-- CARD 07 -->
-                  <li class="carousel__card">
-                    <div class="carousel__img">
-                      <img src="Image/travel.webp" alt="" />
-                    </div>
-                    <div class="carousel__txt">
-                      <div class="carousel__sub-txt grid">
-                        <div class="txt__box-three">
-                          <h5 class="fifth--title">Travel</h5>
-                          <p class="para--fourth">
-                            Travel is the act of moving from one place to
-                            another.
-                          </p>
-                        </div>
-                        <div class="carousel__links flex">
-                          <a
-                            href="https://music-playerx.netlify.app/"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="link-outline"
-                            ></ion-icon
-                          ></a>
-                          <a
-                            href="https://github.com/pratikkw/Music-Player"
-                            target="_blank"
-                            class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="logo-github"
-                            ></ion-icon
-                          ></a>
-                          <a href="#" class="carousel__link"
-                            ><ion-icon
-                              class="carousel__icon"
-                              name="ellipsis-horizontal-outline"
-                            ></ion-icon
-                          ></a>
+                    </li>
+                    <!-- CARD 07 -->
+                    <li class="carousel__card swiper-slide">
+                      <div class="carousel__img">
+                        <img src="Image/travel.webp" alt="" />
+                      </div>
+                      <div class="carousel__txt">
+                        <div class="carousel__sub-txt grid">
+                          <div class="txt__box-three">
+                            <h5 class="fifth--title">Travel</h5>
+                            <p class="para--fourth">
+                              Travel is the act of moving from one place to
+                              another.
+                            </p>
+                          </div>
+                          <div class="carousel__links flex">
+                            <a
+                              href="https://music-playerx.netlify.app/"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="link-outline"
+                              ></ion-icon
+                            ></a>
+                            <a
+                              href="https://github.com/pratikkw/Music-Player"
+                              target="_blank"
+                              class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="logo-github"
+                              ></ion-icon
+                            ></a>
+                            <a href="#" class="carousel__link"
+                              ><ion-icon
+                                class="carousel__icon"
+                                name="ellipsis-horizontal-outline"
+                              ></ion-icon
+                            ></a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
+                  </div>
                 </ul>
                 <!-- </div> -->
 

@@ -87,16 +87,3 @@ body {
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-
-body::-webkit-scrollbar {
-  width: 5px;
-  display: var(--body-scroll-hide);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-bk-clr);
-}
-
-body::-webkit-scrollbar-track-piece {
-  background-color: var(--scroll-track-bk-clr);
-}
