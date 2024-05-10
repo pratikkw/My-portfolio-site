@@ -26,14 +26,15 @@ const swiper = new Swiper(".swiper", {
     },
 
     500: {
-      centeredSlides: true,
       slidesPerView: 1.75,
       spaceBetween: 16,
+      centeredSlides: true,
     },
 
     300: {
       slidesPerView: 1.25,
       spaceBetween: 16,
+      centeredSlides: true,
     },
   },
 });
