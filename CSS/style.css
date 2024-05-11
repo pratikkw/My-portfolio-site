@@ -213,7 +213,7 @@ html.lenis body {
   opacity: 1;
   z-index: 50;
   pointer-events: none;
-  display: grid;
+  display: none;
   place-items: center;
   transition: opacity 0.3s 0.5s ease-in; }
   .preloader__text {
@@ -286,6 +286,8 @@ html.lenis body {
       margin-bottom: var(--fifth-title-mg-bttm); }
   .carousel__links {
     justify-content: flex-end; }
+  .carousel__link {
+    opacity: 1; }
   .carousel__icon {
     font-size: var(--carousel-icon-fs); }
 
@@ -365,7 +367,13 @@ html.lenis body {
   .btn:hover::after {
     width: 100%;
     left: 0;
-    right: auto; } }
+    right: auto; }
+  .carousel__link {
+    transition: opacity 0.3s ease-in; } }
+
+@media only screen and (hover: none) {
+  .carousel__link {
+    opacity: 1 !important; } }
 
 @media only screen and (max-width: 1200px) {
   .home__section {

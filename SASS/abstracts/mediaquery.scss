@@ -23,6 +23,16 @@
     left: 0;
     right: auto;
   }
+
+  .carousel__link {
+    transition: opacity 0.3s ease-in;
+  }
+}
+
+@media only screen and (hover: none) {
+  .carousel__link {
+    opacity: 1 !important;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
