@@ -1,6 +1,50 @@
 .intro__btn {
   font-size: var(--intro-btn-fs);
-  border: 3px solid var(--black-clr);
-  padding: var(--intro-btn-padding);
+}
+
+.see-project__btn {
+  font-size: var(--see-all-project-fs);
+}
+
+.btn {
+  border: 3px solid pink;
+  padding: var(--btn-padding);
   border-radius: 100px;
+
+  width: var(--btn-width);
+  height: var(--btn-height);
+
+  justify-content: center;
+  gap: 0.5rem;
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  transition: color 0.3s, gap 0.3s;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+
+  width: 0%;
+  height: 100%;
+  border-radius: 100px;
+  background-color: var(--black-clr);
+
+  transition: width 0.3s ease-in;
+}
+
+.btn:hover {
+  color: var(--white-clr);
+  gap: 1rem;
+}
+
+.btn:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
 }

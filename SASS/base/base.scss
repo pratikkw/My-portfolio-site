@@ -53,6 +53,8 @@ a {
   --black-clr: hsl(0, 0%, 0%);
 
   // FONT
+  --preloader-fs: 2rem;
+
   --primary-title: 2.5rem;
   --secondary-title: 2rem;
   --third-title: 1.25rem;
@@ -64,8 +66,8 @@ a {
   --third-para: 1rem;
   --fourth-para: 1rem;
 
-  // HIDE/SHOW
-  --body-scroll-hide: none;
+  // MARGIN
+  --preloader-textOne-right-mg: 0.25rem;
 }
 
 body {

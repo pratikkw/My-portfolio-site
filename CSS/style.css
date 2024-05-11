@@ -43,6 +43,7 @@ a {
   --scroll-track-bk-clr: #b3b3b3;
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
+  --preloader-fs: 2rem;
   --primary-title: 2.5rem;
   --secondary-title: 2rem;
   --third-title: 1.25rem;
@@ -52,7 +53,7 @@ a {
   --secondary-para: 1.125rem;
   --third-para: 1rem;
   --fourth-para: 1rem;
-  --body-scroll-hide: none; }
+  --preloader-textOne-right-mg: 0.25rem; }
 
 body {
   min-height: 100dvh;
@@ -91,15 +92,18 @@ html.lenis body {
 
 .home__section {
   --intro-padding: 0 4.5rem;
-  --intro-btn-padding: 0.5rem 1.5rem;
+  --btn-padding: 0rem 0rem;
   --intro-gap: 12rem;
   --intro-txt-gap: 3.5rem;
   --intro-link-gap: 0.5rem;
+  --intro-btn-gap: 0.5rem;
   --primary-title-mg-bttm: 0.5rem;
   --intro-link-mg-bttm: 4.5rem;
   --intro-btn-fs: 1.125rem;
   --intro-link-fs: 0.85rem;
   --occ-fs: 1.125rem;
+  --btn-width: 12rem;
+  --btn-height: 3rem;
   gap: var(--home-gap);
   grid-template-columns: 1fr 1fr; }
 
@@ -174,7 +178,7 @@ html.lenis body {
   --project-gap: 1rem;
   --txt-box-two-gap: 0.5rem;
   --see-all-project-fs: 1.125rem;
-  --see-project-link-mg-bttm: 1.75rem;
+  --see-project-link-mg-bttm: 0.75rem;
   background-color: #26a69a;
   grid-template-rows: auto;
   gap: var(--project-gap); }
@@ -185,15 +189,70 @@ html.lenis body {
   gap: var(--txt-box-two-gap); }
 
 .see-project__link {
-  justify-self: center;
-  font-size: var(--see-all-project-fs);
-  margin-bottom: var(--see-project-link-mg-bttm); }
+  justify-self: center; }
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background-color: var(--loading-page-bk-clr);
+  opacity: 1;
+  z-index: 50;
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+  transition: opacity 0.3s 0.5s ease-in; }
+  .preloader__text {
+    font-size: var(--preloader-fs);
+    color: var(--white-clr);
+    text-align: center; }
+    .preloader__text-one {
+      font-weight: 800;
+      margin-right: var(--preloader-textOne-right-mg);
+      opacity: 1;
+      transition: opacity 0.3s ease-in; }
+    .preloader__text-two {
+      font-weight: 400;
+      opacity: 1;
+      transition: opacity 0.3s 0.15s ease-in; }
 
 .intro__btn {
-  font-size: var(--intro-btn-fs);
-  border: 3px solid var(--black-clr);
-  padding: var(--intro-btn-padding);
-  border-radius: 100px; }
+  font-size: var(--intro-btn-fs); }
+
+.see-project__btn {
+  font-size: var(--see-all-project-fs); }
+
+.btn {
+  border: 3px solid pink;
+  padding: var(--btn-padding);
+  border-radius: 100px;
+  width: var(--btn-width);
+  height: var(--btn-height);
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.3s, gap 0.3s; }
+
+.btn::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 100px;
+  background-color: var(--black-clr);
+  transition: width 0.3s ease-in; }
+
+.btn:hover {
+  color: var(--white-clr);
+  gap: 1rem; }
+
+.btn:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto; }
 
 .carousel {
   --carousel-txt-padding: 0.75rem 1.5rem;
@@ -276,9 +335,11 @@ html.lenis body {
 .hide {
   display: none; }
 
-@media only screen and (hover: none) {
-  .carousel {
-    overflow: scroll; } }
+.opacity-zero {
+  opacity: 0; }
+
+.opacity-one {
+  opacity: 1; }
 
 @media only screen and (max-width: 1200px) {
   .home__section {
@@ -320,17 +381,21 @@ html.lenis body {
     --primary-para: 1.1rem;
     --secondary-para: 1.1rem;
     --third-para: 0.95rem;
-    --fourth-para: 0.95rem; }
+    --fourth-para: 0.95rem;
+    --preloader-textOne-right-mg: 0rem; }
   .home__section {
     --intro-padding: 2rem 1.5rem;
     --intro-btn-fs: 1.1rem;
     --intro-link-fs: 0.825rem;
-    --occ-fs: 1.1rem; }
+    --occ-fs: 1.1rem;
+    --intro-btn-width: 11rem;
+    --intro-btn-height: 2.75rem; }
   .about__section {
     --about-section-padding: 2.25rem 1.5rem;
     --about-one-gap: 1.25rem; }
   .project {
-    --txt-box-two-padding: 2.25rem 1.5rem 0.5rem 1.5rem;
-    --see-project-link-mg-bttm: 3rem; }
+    --txt-box-two-padding: 2.25rem 1.5rem 0.5rem 1.5rem; }
   .carousel {
-    --carousel-img-height: 65dvh; } }
+    --carousel-img-height: 65dvh; }
+  .see-project__link {
+    margin-bottom: var(--see-project-link-mg-bttm); } }

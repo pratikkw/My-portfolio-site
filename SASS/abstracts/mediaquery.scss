@@ -1,9 +1,3 @@
-@media only screen and (hover: none) {
-  .carousel {
-    overflow: scroll;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   .home__section {
     grid-template-columns: 1fr;
@@ -74,6 +68,9 @@
     --secondary-para: 1.1rem;
     --third-para: 0.95rem;
     --fourth-para: 0.95rem;
+
+    // MARGIN
+    --preloader-textOne-right-mg: 0rem;
   }
 
   .home__section {
@@ -84,6 +81,10 @@
     --intro-btn-fs: 1.1rem;
     --intro-link-fs: 0.825rem;
     --occ-fs: 1.1rem;
+
+    // WIDTH & HEIGHT
+    --intro-btn-width: 11rem;
+    --intro-btn-height: 2.75rem;
   }
 
   .about__section {
@@ -96,11 +97,13 @@
 
   .project {
     --txt-box-two-padding: 2.25rem 1.5rem 0.5rem 1.5rem;
-
-    --see-project-link-mg-bttm: 3rem;
   }
 
   .carousel {
     --carousel-img-height: 65dvh;
+  }
+
+  .see-project__link {
+    margin-bottom: var(--see-project-link-mg-bttm);
   }
 }

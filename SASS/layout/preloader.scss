@@ -1,0 +1,34 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  background-color: var(--loading-page-bk-clr);
+  opacity: 1;
+  z-index: 50;
+
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+
+  transition: opacity 0.3s 0.5s ease-in;
+
+  &__text {
+    font-size: var(--preloader-fs);
+    color: var(--white-clr);
+    text-align: center;
+
+    &-one {
+      font-weight: 800;
+      margin-right: var(--preloader-textOne-right-mg);
+      opacity: 1;
+
+      transition: opacity 0.3s ease-in;
+    }
+
+    &-two {
+      font-weight: 400;
+      opacity: 1;
+
+      transition: opacity 0.3s 0.15s ease-in;
+    }
+  }
+}

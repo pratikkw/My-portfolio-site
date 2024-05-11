@@ -3,9 +3,7 @@
 // LENIS
 const lenis = new Lenis();
 
-lenis.on("scroll", (e) => {
-  console.log(e);
-});
+lenis.on("scroll", (e) => {});
 
 function raf(time) {
   lenis.raf(time);
@@ -15,6 +13,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 // --------------------------------
 
+// SWIPPER
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
@@ -54,45 +53,49 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+// --------------------------------
 
-// const rev = function () {
-//   const slidesIndex = [3, 4, 5, 6];
+// GSAP ScrollTriger
+const carouselCards = document.querySelectorAll(".carousel__card");
 
-//   const slideCard = slidesIndex.map((i) => {
-//     return swiper.slides[i];
-//   });
+carouselCards.forEach((card) => {
+  let title = card.querySelector(".fifth--title");
+  let para = card.querySelector(".para--fourth");
 
-//   slideCard.forEach((item) => {
-//     item
-//       .querySelector(".fifth--title")
-//       .setAttribute("style", `transform = translate3d(0,-100px,0)`);
-//     item
-//       .querySelector(".para--fourth")
-//       .setAttribute("style", `transform = translate3d(0,-100px,0)`);
-//   });
-// };
+  gsap.set(card, {
+    x: 1000,
+    opacity: 0.3,
+  });
 
-// const initi = function () {
-//   let as = swiper.activeIndex;
-//   const slidesIndex = [as, as + 1, as + 2];
+  gsap.to(card, {
+    scrollTrigger: {
+      trigger: card,
+      start: "top center",
+    },
+    x: 0,
+    opacity: 1,
+    ease: "power2.out",
+    duration: 2,
+  });
+});
+// --------------------------------
 
-//   const slideCard = slidesIndex.map((i) => {
-//     return swiper.slides[i];
-//   });
+const preloader = document.querySelector(".preloader");
+const preloaderTextOne = document.querySelector(".preloader__text-one");
+const preloaderTextTwo = document.querySelector(".preloader__text-two");
 
-//   slideCard.forEach((item) => {
-//     item
-//       .querySelector(".fifth--title")
-//       .setAttribute("style", `transform = translate3d(0,0,0)`);
-//     item
-//       .querySelector(".para--fourth")
-//       .setAttribute("style", `transform = translate3d(0,0,0)`);
-//   });
+const showSite = function () {
+  preloader.classList.add("opacity-zero");
 
-//   rev();
-// };
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 1000);
+};
 
-// swiper.on("slideChangeTransitionEnd", initi);
-
-// initi();
-// rev();
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    preloaderTextOne.classList.add("opacity-zero");
+    preloaderTextTwo.classList.add("opacity-zero");
+    showSite();
+  }, 1000);
+});

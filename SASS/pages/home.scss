@@ -9,12 +9,13 @@
 .home__section {
   // PADDING
   --intro-padding: 0 4.5rem;
-  --intro-btn-padding: 0.5rem 1.5rem;
+  --btn-padding: 0rem 0rem;
 
   // GAP
   --intro-gap: 12rem;
   --intro-txt-gap: 3.5rem;
   --intro-link-gap: 0.5rem;
+  --intro-btn-gap: 0.5rem;
 
   // MARGIN
   --primary-title-mg-bttm: 0.5rem;
@@ -24,6 +25,10 @@
   --intro-btn-fs: 1.125rem;
   --intro-link-fs: 0.85rem;
   --occ-fs: 1.125rem;
+
+  // WIDTH & HEIGHT
+  --btn-width: 12rem;
+  --btn-height: 3rem;
 
   gap: var(--home-gap);
   grid-template-columns: 1fr 1fr;
@@ -148,7 +153,7 @@
   --see-all-project-fs: 1.125rem;
 
   // MARGIN
-  --see-project-link-mg-bttm: 1.75rem;
+  --see-project-link-mg-bttm: 0.75rem;
 
   background-color: #26a69a;
 
@@ -164,6 +169,4 @@
 
 .see-project__link {
   justify-self: center;
-  font-size: var(--see-all-project-fs);
-  margin-bottom: var(--see-project-link-mg-bttm);
 }

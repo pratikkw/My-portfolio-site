@@ -30,10 +30,27 @@
       defer
     ></script>
 
+    <!-- GSAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+
     <!-- JS -->
     <script src="JS/script.js" defer></script>
   </head>
-  <body class="body--lock">
+  <body>
+    <div class="preloader">
+      <span class="preloader__text"
+        ><span class="preloader__text-one">Pratik Kesharwani</span>
+        <span class="preloader__text-two">Portfolio</span>
+      </span>
+    </div>
     <main class="main">
       <div class="container">
         <section class="home__section section grid">
@@ -44,7 +61,10 @@
                 <h1 class="primary--title">Hello, I'm Pratik kesharwani</h1>
                 <span class="occ">Front-end Developer</span>
               </div>
-              <button class="intro__btn">Go to Project &rightarrow;</button>
+              <button class="intro__btn btn flex">
+                <span> Go to Project </span>
+                <span> &rightarrow; </span>
+              </button>
             </div>
 
             <div class="intro__link grid">
@@ -124,8 +144,6 @@
                     Swip or drag below to see some feature projects
                   </p>
                 </div>
-
-                <!-- <div class="carousel"> -->
 
                 <ul class="carousel swiper">
                   <div class="swiper-wrapper">
@@ -433,11 +451,12 @@
                   </div>
                 </ul>
 
-                <!-- </div> -->
-
-                <span class="see-project__link"
-                  ><a href="#">See all Project &RightArrow;</a></span
-                >
+                <a href="#" class="see-project__link">
+                  <button class="see-project__btn btn flex">
+                    <span>See all Project</span>
+                    <span>&RightArrow;</span>
+                  </button>
+                </a>
               </div>
             </div>
           </section>
