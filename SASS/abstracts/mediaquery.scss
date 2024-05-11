@@ -32,6 +32,14 @@
     // GAP
     --intro-gap: 10rem;
     --intro-txt-gap: 4rem;
+
+    // HEIGHT & WIDTH
+    --bulb-width: 8rem;
+    --bulb-height: 8rem;
+
+    // TOP & LEFT
+    --bulb-top: -5px;
+    --bulb-left: 5px;
   }
 
   .intro {
@@ -112,6 +120,12 @@
     // WIDTH & HEIGHT
     --intro-btn-width: 11rem;
     --intro-btn-height: 2.75rem;
+    --bulb-width: 7rem;
+    --bulb-height: 7rem;
+
+    // TOP & LEFT
+    --bulb-top: -10px;
+    --bulb-left: -5px;
   }
 
   .about__section {
