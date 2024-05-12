@@ -172,9 +172,6 @@ html.lenis body {
   align-content: start;
   padding: var(--about-section-padding); }
 
-.about__section::-webkit-scrollbar {
-  display: none; }
-
 .about__one {
   gap: var(--about-one-gap); }
 
@@ -187,6 +184,9 @@ html.lenis body {
   padding: var(--skill-padding);
   border-radius: 0.25rem;
   font-weight: 500; }
+
+#split-type {
+  font-kerning: none; }
 
 .project {
   --txt-box-two-padding: 2rem 3.5rem 0.5rem 3.5rem;
@@ -339,7 +339,7 @@ html.lenis body {
   opacity: 1; }
 
 .darkMode {
-  --bulb-wire-clr: #fff;
+  --bulb-wire-clr: pink;
   --bulb-cap-clr: #e8e5de;
   --bulb-outersurface-clr: #e9e1c3;
   --bulb-box-clr: #f19261;

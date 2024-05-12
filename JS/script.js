@@ -121,11 +121,16 @@ carouselCards.forEach((card) => {
 });
 // --------------------------------
 
+// SPLIT TYPE
+// --------------------------------
+
 const preloader = document.querySelector(".preloader");
 const preloaderTextOne = document.querySelector(".preloader__text-one");
 const preloaderTextTwo = document.querySelector(".preloader__text-two");
 const swiperBox = document.querySelector(".swiper-wrapper");
+const bulbBtn = document.querySelector(".bulb");
 
+// Preloader
 const showSite = function () {
   preloader.classList.add("opacity-zero");
 
@@ -141,7 +146,9 @@ window.addEventListener("load", function () {
     showSite();
   }, 1000);
 });
+// --------------------------------
 
+// Link Hover
 swiperBox.addEventListener("mouseover", function (e) {
   const targetEle = e.target;
 
@@ -158,3 +165,12 @@ swiperBox.addEventListener("mouseover", function (e) {
     [...child].forEach((item) => (item.style.opacity = "1"));
   });
 });
+// --------------------------------
+
+// Dark Mode
+const changeTheme = function () {
+  document.body.classList.toggle("darkMode");
+};
+
+bulbBtn.addEventListener("click", changeTheme);
+// --------------------------------
