@@ -46,7 +46,7 @@ a {
 
 :root {
   // BACKGROUND CLR
-  --loading-page-bk-clr: hwb(0 5% 95%);
+  --loading-page-bk-clr: #000103;
   --intro-bk-clr: #edf6f9;
   --about-section-bk-clr: #d3ffe9;
   --project-section-bk-clr: #6fb5cf;
@@ -63,7 +63,6 @@ a {
   --occ-txt-clr: #000;
   --btn-text-clr: #000;
   --soc-link-text-clr: #000;
-  --intro-link-txt-clr: #000;
   --intro-link-txt-clr: #00a7db;
 
   --primary-title-clr: #000;
@@ -78,10 +77,12 @@ a {
   --fourth-para-clr: #fff;
 
   --occ-txt-clr: #00a7db;
+  --skill-text-clr: #000;
 
   // BORDER CLR
   --btn-border-clr: #000;
   --soc-link-border-clr: #000;
+  --skill-border-clr: #000;
 
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);

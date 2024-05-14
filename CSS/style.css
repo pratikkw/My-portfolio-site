@@ -38,7 +38,7 @@ a {
   color: inherit; }
 
 :root {
-  --loading-page-bk-clr: hwb(0 5% 95%);
+  --loading-page-bk-clr: #000103;
   --intro-bk-clr: #edf6f9;
   --about-section-bk-clr: #d3ffe9;
   --project-section-bk-clr: #6fb5cf;
@@ -49,7 +49,6 @@ a {
   --occ-txt-clr: #000;
   --btn-text-clr: #000;
   --soc-link-text-clr: #000;
-  --intro-link-txt-clr: #000;
   --intro-link-txt-clr: #00a7db;
   --primary-title-clr: #000;
   --secondary-title-clr: #2f4858;
@@ -61,8 +60,10 @@ a {
   --third-para-clr: #000;
   --fourth-para-clr: #fff;
   --occ-txt-clr: #00a7db;
+  --skill-text-clr: #000;
   --btn-border-clr: #000;
   --soc-link-border-clr: #000;
+  --skill-border-clr: #000;
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
   --bulb-wire-clr: #000;
@@ -208,10 +209,11 @@ html.lenis body {
 
 .skill {
   text-align: center;
-  border: 2px solid var(--black-clr);
+  border: 2px solid var(--skill-border-clr);
   padding: var(--skill-padding);
   border-radius: 0.25rem;
-  font-weight: 500; }
+  font-weight: 500;
+  color: var(--skill-text-clr); }
 
 #split-type {
   font-kerning: none; }
@@ -379,6 +381,35 @@ html.lenis body {
   opacity: 1; }
 
 .darkMode {
+  --loading-page-bk-clr: #000103;
+  --intro-bk-clr: #0d1317;
+  --about-section-bk-clr: #201e1f;
+  --project-section-bk-clr: #2f1b25;
+  --intro-btn-bk-clr: #fff;
+  --project-btn-bk-clr: #fff;
+  --intro-btn-bk-hover-clr: #7cb4c4;
+  --project-btn-bk-hover-clr: #004a60;
+  --occ-txt-clr: #000;
+  --btn-text-clr: #000;
+  --soc-link-text-clr: #fff;
+  --intro-link-txt-clr: #00a7db;
+  --primary-title-clr: #fff;
+  --secondary-title-clr: #fff;
+  --third-title-clr: #fff;
+  --fourth-title-clr: #fff;
+  --fifth-title-clr: #fff;
+  --primary-para-clr: #fff;
+  --secondary-para-clr: #fff;
+  --third-para-clr: #fff;
+  --fourth-para-clr: #fff;
+  --occ-txt-clr: #00a7db;
+  --skill-text-clr: #fff;
+  --btn-border-clr: #000;
+  --soc-link-border-clr: #000;
+  --skill-border-clr: #fff;
+  --soc-link-border-clr: #fff;
+  --white-clr: hsl(0, 0%, 100%);
+  --black-clr: hsl(0, 0%, 0%);
   --bulb-wire-clr: pink;
   --bulb-cap-clr: #e8e5de;
   --bulb-outersurface-clr: #e9e1c3;

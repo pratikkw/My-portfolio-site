@@ -137,10 +137,12 @@
 .skill {
   text-align: center;
 
-  border: 2px solid var(--black-clr);
+  border: 2px solid var(--skill-border-clr);
   padding: var(--skill-padding);
   border-radius: 0.25rem;
   font-weight: 500;
+
+  color: var(--skill-text-clr);
 }
 
 #split-type {
