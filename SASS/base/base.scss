@@ -45,9 +45,43 @@ a {
 }
 
 :root {
-  --loading-page-bk-clr: hsl(0, 0%, 5%);
-  --scroll-thumb-bk-clr: #333333;
-  --scroll-track-bk-clr: #b3b3b3;
+  // BACKGROUND CLR
+  --loading-page-bk-clr: hwb(0 5% 95%);
+  --intro-bk-clr: #edf6f9;
+  --about-section-bk-clr: #d3ffe9;
+  --project-section-bk-clr: #6fb5cf;
+
+  // BTN
+  --intro-btn-bk-clr: #fff;
+  --project-btn-bk-clr: #fff;
+
+  // BTN HOVER
+  --intro-btn-bk-hover-clr: #7cb4c4;
+  --project-btn-bk-hover-clr: #004a60;
+
+  // TEXT CLR
+  --occ-txt-clr: #000;
+  --btn-text-clr: #000;
+  --soc-link-text-clr: #000;
+  --intro-link-txt-clr: #000;
+  --intro-link-txt-clr: #00a7db;
+
+  --primary-title-clr: #000;
+  --secondary-title-clr: #2f4858;
+  --third-title-clr: #2f4858;
+  --fourth-title-clr: #000;
+  --fifth-title-clr: #fff;
+
+  --primary-para-clr: #000;
+  --secondary-para-clr: #000;
+  --third-para-clr: #000;
+  --fourth-para-clr: #fff;
+
+  --occ-txt-clr: #00a7db;
+
+  // BORDER CLR
+  --btn-border-clr: #000;
+  --soc-link-border-clr: #000;
 
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
@@ -88,6 +122,7 @@ body {
   isolation: isolate;
 
   font-family: "Lato", sans-serif;
+  color: var(--body-text-clr);
 }
 
 .flex {

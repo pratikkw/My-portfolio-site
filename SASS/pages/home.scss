@@ -41,6 +41,8 @@
 }
 
 .intro {
+  background-color: var(--intro-bk-clr);
+
   justify-content: center;
   grid-template-rows: 1fr auto;
 
@@ -71,10 +73,12 @@
 
     .occ {
       font-size: var(--occ-fs);
+      color: var(--occ-txt-clr);
     }
   }
 
   &__link {
+    color: var(--intro-link-txt-clr);
     font-weight: 600;
     font-size: var(--intro-link-fs);
 
@@ -84,8 +88,9 @@
     margin-bottom: var(--intro-link-mg-bttm);
 
     .link {
+      color: var(--soc-link-text-clr);
       font-weight: 400;
-      border-bottom: 1px solid var(--black-clr);
+      border-bottom: 1px solid var(--soc-link-border-clr);
     }
   }
 }
@@ -113,35 +118,23 @@
   --about-section-gap: 2.5rem;
   --about-one-gap: 2rem;
 
-  background-color: antiquewhite;
+  background-color: var(--about-section-bk-clr);
 
   gap: var(--about-section-gap);
   align-content: start;
   padding: var(--about-section-padding);
 }
 
-.about__section::-webkit-scrollbar {
-  // display: none;
-}
-
 .about__one {
   gap: var(--about-one-gap);
 }
 
-.about__two {
-}
-
-.about__three {
-}
-
 .skill__box {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
   overflow-x: hidden;
 }
 
 .skill {
-  // flex: 1;
-  // max-width: 150px;
   text-align: center;
 
   border: 2px solid var(--black-clr);
@@ -169,7 +162,7 @@
   // MARGIN
   --see-project-link-mg-bttm: 0.75rem;
 
-  background-color: #26a69a;
+  background-color: var(--project-section-bk-clr);
 
   grid-template-rows: auto;
   gap: var(--project-gap);

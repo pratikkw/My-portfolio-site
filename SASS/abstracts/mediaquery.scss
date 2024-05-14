@@ -8,14 +8,25 @@
     width: 0%;
     height: 100%;
     border-radius: 100px;
-    background-color: var(--black-clr);
 
     transition: width 0.3s ease-in;
+  }
+
+  .intro__btn::after {
+    background-color: var(--intro-btn-bk-hover-clr);
+  }
+
+  .see-project__btn::after {
+    background-color: var(--project-btn-bk-hover-clr);
   }
 
   .btn:hover {
     color: var(--white-clr);
     gap: 1rem;
+    border-color: #fff;
+  }
+
+  .see-project__btn:hover {
   }
 
   .btn:hover::after {
@@ -26,6 +37,14 @@
 
   .carousel__link {
     transition: opacity 0.3s ease-in;
+  }
+
+  .link {
+    transition: border 0.3s ease-in;
+  }
+
+  .link:hover {
+    border-bottom-color: transparent;
   }
 }
 

@@ -1,13 +1,16 @@
 .intro__btn {
   font-size: var(--intro-btn-fs);
+  background-color: var(--intro-btn-bk-clr);
 }
 
 .see-project__btn {
   font-size: var(--see-all-project-fs);
+  background-color: var(--project-btn-bk-clr);
 }
 
 .btn {
-  border: 3px solid pink;
+  color: var(--btn-text-clr);
+  border: 3px solid var(--btn-border-clr);
   padding: var(--btn-padding);
   border-radius: 100px;
 

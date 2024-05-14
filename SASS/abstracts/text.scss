@@ -1,41 +1,54 @@
 .primary--title {
   font-size: var(--primary-title);
+  color: var(--primary-title-clr);
 }
 
 .secondary--title {
   font-size: var(--secondary-title);
+  color: var(--secondary-title-clr);
 }
 
 .third--title {
   font-size: var(--third-title);
+  color: var(--third-title-clr);
 }
 
 .fourth--title {
   font-size: var(--fourth-title);
+  color: var(--fourth-title-clr);
 }
 
 .fifth--title {
   font-size: var(--fifth-title);
   font-weight: 800;
   letter-spacing: 1px;
+  color: var(--fifth-title-clr);
 }
 
 .para--primary {
   font-size: var(--primary-para);
   font-weight: 600;
   line-height: 1.6;
+
+  color: var(--primary-para-clr);
 }
 
 .para--secondary {
   font-size: var(--secondary-para);
   line-height: 1.5;
+
+  color: var(--secondary-para-clr);
 }
 
 .para--third {
   font-size: var(--third-para);
+
+  color: var(--third-para-clr);
 }
 
 .para--fourth {
   font-size: var(--fourth-para);
   line-height: 1.3;
+
+  color: var(--fourth-para-clr);
 }
