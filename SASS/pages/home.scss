@@ -136,6 +136,7 @@
 
 .skill__box {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  overflow-x: hidden;
 }
 
 .skill {
