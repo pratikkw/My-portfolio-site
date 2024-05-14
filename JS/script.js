@@ -129,6 +129,7 @@ const preloaderTextOne = document.querySelector(".preloader__text-one");
 const preloaderTextTwo = document.querySelector(".preloader__text-two");
 const swiperBox = document.querySelector(".swiper-wrapper");
 const bulbBtn = document.querySelector(".bulb");
+const toggleAudio = new Audio("../audio/on-off-sound.mp3");
 
 // Preloader
 const showSite = function () {
@@ -170,7 +171,23 @@ swiperBox.addEventListener("mouseover", function (e) {
 // Dark Mode
 const changeTheme = function () {
   document.body.classList.toggle("darkMode");
+  toggleAudio.play();
+
+  if (document.body.classList.contains("darkMode")) {
+    localStorage.setItem("mode", "dark");
+  } else {
+    localStorage.setItem("mode", "light");
+  }
 };
+
+const checkMode = function () {
+  if (localStorage.getItem("mode") == "dark") {
+    document.body.classList.add("darkMode");
+  } else {
+    document.body.classList.remove("darkMode");
+  }
+};
+checkMode();
 
 bulbBtn.addEventListener("click", changeTheme);
 // --------------------------------

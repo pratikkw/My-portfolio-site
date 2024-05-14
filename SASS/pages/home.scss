@@ -53,6 +53,7 @@
   inset: 0 50% 0 0;
 
   .bulb {
+    cursor: pointer;
     width: var(--bulb-width);
     height: var(--bulb-height);
 

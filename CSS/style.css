@@ -154,6 +154,7 @@ html.lenis body {
   position: fixed;
   inset: 0 50% 0 0; }
   .intro .bulb {
+    cursor: pointer;
     width: var(--bulb-width);
     height: var(--bulb-height);
     position: absolute;
