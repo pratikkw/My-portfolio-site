@@ -14,7 +14,6 @@ requestAnimationFrame(raf);
 // --------------------------------
 
 const showcaseBox = document.querySelector(".showcase__cards");
-console.log(showcaseBox);
 
 const getCarousel = async function () {
   const result = await fetch("../JSON/project.json");
@@ -34,6 +33,7 @@ const getCarousel = async function () {
           </div>
 
           <div class="carousel__links flex">
+          <span class="showcase__date">${item.date}</span>
             <a
               href="https://music-playerx.netlify.app/"
               target="_blank"
@@ -77,9 +77,13 @@ showcaseBox.addEventListener("mouseover", function (e) {
   const linkBox = targetEle.closest(".carousel__links");
   const child = linkBox.children;
 
-  [...child].forEach((item) => {
-    if (item != targetEleTwo) item.style.opacity = "0.15";
-  });
+  [...child]
+    .filter((item) => {
+      return item.classList.contains("carousel__link");
+    })
+    .forEach((item) => {
+      if (item != targetEleTwo) item.style.opacity = "0.15";
+    });
 
   linkBox.addEventListener("mouseout", function (e) {
     [...child].forEach((item) => (item.style.opacity = "1"));

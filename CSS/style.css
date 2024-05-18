@@ -269,6 +269,8 @@ html.lenis body {
     gap: 2rem 1.5rem; }
   .showcase__sub-txt {
     overflow: hidden; }
+  .showcase__date {
+    margin-right: auto; }
 
 .preloader {
   position: fixed;
