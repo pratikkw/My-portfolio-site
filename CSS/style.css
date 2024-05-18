@@ -241,6 +241,35 @@ html.lenis body {
   color: var(--see-project-txt-clr);
   font-size: var(--see-all-project-fs); }
 
+.container__primary {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto; }
+
+.project__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #ffeaa7;
+  padding: 0.75rem 1rem; }
+  .project__header_subbox {
+    max-width: 1100px;
+    margin-inline: auto;
+    width: 100%;
+    justify-content: space-between; }
+
+.icon__box > * {
+  font-size: 2rem; }
+
+.showcase {
+  padding: 1.5rem 1.5rem; }
+  .showcase__cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem 1.5rem; }
+  .showcase__sub-txt {
+    overflow: hidden; }
+
 .preloader {
   position: fixed;
   inset: 0;
@@ -314,6 +343,7 @@ html.lenis body {
     flex-direction: column;
     justify-content: flex-end; }
   .carousel__sub-txt {
+    grid-template-rows: 1fr auto;
     gap: var(--carousel-txt-gap);
     color: var(--white-clr);
     background: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.27));
@@ -323,6 +353,7 @@ html.lenis body {
     .carousel__sub-txt .txt__box-three > .fifth--title {
       margin-bottom: var(--fifth-title-mg-bttm); }
   .carousel__links {
+    z-index: 30;
     justify-content: flex-end; }
   .carousel__link {
     opacity: 1; }
@@ -368,7 +399,7 @@ html.lenis body {
 
 .para--fourth {
   font-size: var(--fourth-para);
-  line-height: 1.3;
+  line-height: 1.5;
   color: var(--fourth-para-clr);
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -458,7 +489,20 @@ html.lenis body {
   .see-project__link {
     transition: border 0.3s ease-in; }
   .see-project__link:hover {
-    border-bottom-color: var(--see-project-hover-link-border-clr); } }
+    border-bottom-color: var(--see-project-hover-link-border-clr); }
+  .carousel__sub-txt {
+    height: 30%;
+    transition: height 0.4s ease-in; }
+  .showcase__sub-txt {
+    cursor: pointer; }
+  .showcase__card:has(.carousel__sub-txt:hover) .carousel__sub-txt {
+    height: 100%;
+    backdrop-filter: blur(2px); }
+  .showcase__card:has(.carousel__sub-txt:hover) .para--fourth {
+    -webkit-line-clamp: initial;
+    font-size: 1.25rem; }
+  .showcase__card:has(.carousel__sub-txt:hover) .fifth--title {
+    font-size: 2.125rem; } }
 
 @media only screen and (hover: none) {
   .carousel__link {
@@ -529,4 +573,6 @@ html.lenis body {
   .carousel {
     --carousel-img-height: 65dvh; }
   .see-project__link {
-    margin-bottom: var(--see-project-link-mg-bttm); } }
+    margin-bottom: var(--see-project-link-mg-bttm); }
+  .showcase__cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }

@@ -47,6 +47,29 @@
   .see-project__link:hover {
     border-bottom-color: var(--see-project-hover-link-border-clr);
   }
+
+  .carousel__sub-txt {
+    height: 30%;
+    transition: height 0.4s ease-in;
+  }
+
+  .showcase__sub-txt {
+    cursor: pointer;
+  }
+
+  .showcase__card:has(.carousel__sub-txt:hover) .carousel__sub-txt {
+    height: 100%;
+    backdrop-filter: blur(2px);
+  }
+
+  .showcase__card:has(.carousel__sub-txt:hover) .para--fourth {
+    -webkit-line-clamp: initial;
+    font-size: 1.25rem;
+  }
+
+  .showcase__card:has(.carousel__sub-txt:hover) .fifth--title {
+    font-size: 2.125rem;
+  }
 }
 
 @media only screen and (hover: none) {
@@ -176,5 +199,11 @@
 
   .see-project__link {
     margin-bottom: var(--see-project-link-mg-bttm);
+  }
+
+  .showcase {
+    &__cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
 }

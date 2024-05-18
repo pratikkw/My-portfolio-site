@@ -45,6 +45,7 @@
   }
 
   &__sub-txt {
+    grid-template-rows: 1fr auto;
     gap: var(--carousel-txt-gap);
 
     color: var(--white-clr);
@@ -54,18 +55,14 @@
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 
-    .txt__box-three {
-      // align-self: baseline;
-    }
-
     .txt__box-three > .fifth--title {
       margin-bottom: var(--fifth-title-mg-bttm);
     }
   }
 
   &__links {
+    z-index: 30;
     justify-content: flex-end;
-    // align-self: flex-end;
   }
 
   &__link {
