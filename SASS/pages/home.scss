@@ -160,7 +160,7 @@
   --txt-box-two-gap: 0.5rem;
 
   // FONT
-  --see-all-project-fs: 1.125rem;
+  --see-all-project-fs: 1.25rem;
 
   // MARGIN
   --see-project-link-mg-bttm: 0.75rem;
@@ -169,6 +169,8 @@
 
   grid-template-rows: auto;
   gap: var(--project-gap);
+
+  align-items: flex-start;
 }
 
 .txt__box-two {
@@ -179,4 +181,7 @@
 
 .see-project__link {
   justify-self: center;
+  border-bottom: 1px solid transparent;
+  color: var(--see-project-txt-clr);
+  font-size: var(--see-all-project-fs);
 }

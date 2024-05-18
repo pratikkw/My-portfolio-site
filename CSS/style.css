@@ -42,14 +42,14 @@ a {
   --intro-bk-clr: #edf6f9;
   --about-section-bk-clr: #d3ffe9;
   --project-section-bk-clr: #6fb5cf;
-  --intro-btn-bk-clr: #fff;
-  --project-btn-bk-clr: #fff;
+  --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
-  --project-btn-bk-hover-clr: #004a60;
+  --see-project-hover-link-border-clr: #000;
   --occ-txt-clr: #000;
   --btn-text-clr: #000;
   --soc-link-text-clr: #000;
   --intro-link-txt-clr: #00a7db;
+  --see-project-txt-clr: #000;
   --primary-title-clr: #000;
   --secondary-title-clr: #2f4858;
   --third-title-clr: #2f4858;
@@ -61,7 +61,7 @@ a {
   --fourth-para-clr: #fff;
   --occ-txt-clr: #00a7db;
   --skill-text-clr: #000;
-  --btn-border-clr: #000;
+  --btn-border-clr: hsla(0, 0%, 0%, 0.5);
   --soc-link-border-clr: #000;
   --skill-border-clr: #000;
   --white-clr: hsl(0, 0%, 100%);
@@ -223,11 +223,12 @@ html.lenis body {
   --txt-box-two-padding: 2rem 3.5rem 0.5rem 3.5rem;
   --project-gap: 1rem;
   --txt-box-two-gap: 0.5rem;
-  --see-all-project-fs: 1.125rem;
+  --see-all-project-fs: 1.25rem;
   --see-project-link-mg-bttm: 0.75rem;
   background-color: var(--project-section-bk-clr);
   grid-template-rows: auto;
-  gap: var(--project-gap); }
+  gap: var(--project-gap);
+  align-items: flex-start; }
 
 .txt__box-two {
   padding: var(--txt-box-two-padding);
@@ -235,7 +236,10 @@ html.lenis body {
   gap: var(--txt-box-two-gap); }
 
 .see-project__link {
-  justify-self: center; }
+  justify-self: center;
+  border-bottom: 1px solid transparent;
+  color: var(--see-project-txt-clr);
+  font-size: var(--see-all-project-fs); }
 
 .preloader {
   position: fixed;
@@ -365,7 +369,11 @@ html.lenis body {
 .para--fourth {
   font-size: var(--fourth-para);
   line-height: 1.3;
-  color: var(--fourth-para-clr); }
+  color: var(--fourth-para-clr);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
 
 .sticky {
   position: sticky;
@@ -386,14 +394,14 @@ html.lenis body {
   --intro-bk-clr: #0d1317;
   --about-section-bk-clr: #201e1f;
   --project-section-bk-clr: #2f1b25;
-  --intro-btn-bk-clr: #fff;
-  --project-btn-bk-clr: #fff;
+  --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
-  --project-btn-bk-hover-clr: #004a60;
+  --see-project-hover-link-border-clr: #fff;
   --occ-txt-clr: #000;
-  --btn-text-clr: #000;
+  --btn-text-clr: #fff;
   --soc-link-text-clr: #fff;
   --intro-link-txt-clr: #00a7db;
+  --see-project-txt-clr: #fff;
   --primary-title-clr: #fff;
   --secondary-title-clr: #fff;
   --third-title-clr: #fff;
@@ -405,10 +413,9 @@ html.lenis body {
   --fourth-para-clr: #fff;
   --occ-txt-clr: #00a7db;
   --skill-text-clr: #fff;
-  --btn-border-clr: #000;
-  --soc-link-border-clr: #000;
-  --skill-border-clr: #fff;
+  --btn-border-clr: hsla(0, 0%, 100%, 0.5);
   --soc-link-border-clr: #fff;
+  --skill-border-clr: #fff;
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
   --bulb-wire-clr: pink;
@@ -434,8 +441,6 @@ html.lenis body {
     transition: width 0.3s ease-in; }
   .intro__btn::after {
     background-color: var(--intro-btn-bk-hover-clr); }
-  .see-project__btn::after {
-    background-color: var(--project-btn-bk-hover-clr); }
   .btn:hover {
     color: var(--white-clr);
     gap: 1rem;
@@ -449,7 +454,11 @@ html.lenis body {
   .link {
     transition: border 0.3s ease-in; }
   .link:hover {
-    border-bottom-color: transparent; } }
+    border-bottom-color: transparent; }
+  .see-project__link {
+    transition: border 0.3s ease-in; }
+  .see-project__link:hover {
+    border-bottom-color: var(--see-project-hover-link-border-clr); } }
 
 @media only screen and (hover: none) {
   .carousel__link {

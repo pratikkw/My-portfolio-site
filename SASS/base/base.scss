@@ -52,18 +52,18 @@ a {
   --project-section-bk-clr: #6fb5cf;
 
   // BTN
-  --intro-btn-bk-clr: #fff;
-  --project-btn-bk-clr: #fff;
+  --intro-btn-bk-clr: transparent;
 
   // BTN HOVER
   --intro-btn-bk-hover-clr: #7cb4c4;
-  --project-btn-bk-hover-clr: #004a60;
+  --see-project-hover-link-border-clr: #000;
 
   // TEXT CLR
   --occ-txt-clr: #000;
   --btn-text-clr: #000;
   --soc-link-text-clr: #000;
   --intro-link-txt-clr: #00a7db;
+  --see-project-txt-clr: #000;
 
   --primary-title-clr: #000;
   --secondary-title-clr: #2f4858;
@@ -80,7 +80,7 @@ a {
   --skill-text-clr: #000;
 
   // BORDER CLR
-  --btn-border-clr: #000;
+  --btn-border-clr: hsla(0, 0%, 0%, 0.5);
   --soc-link-border-clr: #000;
   --skill-border-clr: #000;
 

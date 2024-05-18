@@ -16,17 +16,10 @@
     background-color: var(--intro-btn-bk-hover-clr);
   }
 
-  .see-project__btn::after {
-    background-color: var(--project-btn-bk-hover-clr);
-  }
-
   .btn:hover {
     color: var(--white-clr);
     gap: 1rem;
     border-color: #fff;
-  }
-
-  .see-project__btn:hover {
   }
 
   .btn:hover::after {
@@ -45,6 +38,14 @@
 
   .link:hover {
     border-bottom-color: transparent;
+  }
+
+  .see-project__link {
+    transition: border 0.3s ease-in;
+  }
+
+  .see-project__link:hover {
+    border-bottom-color: var(--see-project-hover-link-border-clr);
   }
 }
 
