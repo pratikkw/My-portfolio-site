@@ -1,5 +1,152 @@
 "use strict";
 
+const preloader = document.querySelector(".preloader");
+const preloaderTextOne = document.querySelector(".preloader__text-one");
+const preloaderTextTwo = document.querySelector(".preloader__text-two");
+const swiperBox = document.querySelector(".swiper-wrapper");
+const bulbBtn = document.querySelector(".bulb");
+const toggleAudio = new Audio("../audio/on-off-sound.mp3");
+
+// GSAP ScrollTriger
+const carouselCardTrigger = function (cards) {
+  cards.forEach((card) => {
+    let title = card.querySelector(".fifth--title");
+    let para = card.querySelector(".para--fourth");
+    let links = card.querySelectorAll(".carousel__link");
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: card,
+        start: "top center",
+        markers: false,
+      },
+
+      ease: "sine.out",
+    });
+
+    gsap.set(card, {
+      x: 1000,
+      opacity: 0.3,
+    });
+
+    gsap.set(title, {
+      y: 100,
+      opacity: 0,
+    });
+
+    gsap.set(para, {
+      y: 150,
+      opacity: 0,
+    });
+
+    gsap.set(links, {
+      x: 150,
+      opacity: 0,
+    });
+
+    tl.to(card, {
+      x: 0,
+      opacity: 1,
+      duration: 2,
+      ease: "power3.out",
+    });
+
+    tl.to(
+      [title, para],
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+      },
+      "-=0.5"
+    );
+
+    tl.to(
+      links,
+      {
+        x: 0,
+        opacity: 1,
+      },
+      "-=0.25"
+    );
+  });
+};
+// --------------------------------
+
+// GET Carousel
+const getCarousel = async function () {
+  const result = await fetch("JSON/project.json");
+  const r = await result.json();
+
+  swiperBox.innerHTML = r
+    .map((item) => {
+      return `<li class="carousel__card swiper-slide" data-projectID="${item.projectID}">
+    <div class="carousel__img">
+      <img src=${item.projectImg} alt="" />
+    </div>
+    <div class="carousel__txt">
+      <div class="carousel__sub-txt grid">
+        <div class="txt__box-three">
+          <h5 class="fifth--title">${item.projectName}</h5>
+          <p class="para--fourth">${item.desc}</p>
+        </div>
+
+        <div class="carousel__links flex">
+          <a
+            href="${item.siteLink}"
+            target="_blank"
+            class="carousel__link"
+            ><ion-icon
+              class="carousel__icon"
+              name="link-outline"
+            ></ion-icon
+          ></a>
+          <a
+            href="${item.gitLink}"
+            target="_blank"
+            class="carousel__link"
+            ><ion-icon
+              class="carousel__icon"
+              name="logo-github"
+            ></ion-icon
+          ></a>
+          <a href="#" class="carousel__link"
+            ><ion-icon
+              class="carousel__icon"
+              name="ellipsis-horizontal-outline"
+            ></ion-icon
+          ></a>
+        </div>
+      </div>
+    </div>
+  </li>`;
+    })
+    .join("");
+
+  const carouselCards = document.querySelectorAll(".carousel__card");
+  carouselCardTrigger(carouselCards);
+};
+// --------------------------------
+
+// Preloader
+const showSite = function () {
+  preloader.classList.add("opacity-zero");
+
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 1000);
+};
+
+window.addEventListener("load", function () {
+  getCarousel();
+  setTimeout(() => {
+    preloaderTextOne.classList.add("opacity-zero");
+    preloaderTextTwo.classList.add("opacity-zero");
+    showSite();
+  }, 1000);
+});
+// --------------------------------
+
 // LENIS
 const lenis = new Lenis();
 
@@ -52,150 +199,6 @@ const swiper = new Swiper(".swiper", {
       centeredSlides: true,
     },
   },
-});
-// --------------------------------
-
-// GSAP ScrollTriger
-const carouselCards = document.querySelectorAll(".carousel__card");
-
-carouselCards.forEach((card) => {
-  let title = card.querySelector(".fifth--title");
-  let para = card.querySelector(".para--fourth");
-  let links = card.querySelectorAll(".carousel__link");
-
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: card,
-      start: "top center",
-      markers: false,
-    },
-
-    ease: "sine.out",
-  });
-
-  gsap.set(card, {
-    x: 1000,
-    opacity: 0.3,
-  });
-
-  gsap.set(title, {
-    y: 100,
-    opacity: 0,
-  });
-
-  gsap.set(para, {
-    y: 150,
-    opacity: 0,
-  });
-
-  gsap.set(links, {
-    x: 150,
-    opacity: 0,
-  });
-
-  tl.to(card, {
-    x: 0,
-    opacity: 1,
-    duration: 2,
-    ease: "power3.out",
-  });
-
-  tl.to(
-    [title, para],
-    {
-      y: 0,
-      opacity: 1,
-      duration: 0.5,
-    },
-    "-=0.5"
-  );
-
-  tl.to(
-    links,
-    {
-      x: 0,
-      opacity: 1,
-    },
-    "-=0.25"
-  );
-});
-// --------------------------------
-
-const preloader = document.querySelector(".preloader");
-const preloaderTextOne = document.querySelector(".preloader__text-one");
-const preloaderTextTwo = document.querySelector(".preloader__text-two");
-const swiperBox = document.querySelector(".swiper-wrapper");
-const bulbBtn = document.querySelector(".bulb");
-const toggleAudio = new Audio("../audio/on-off-sound.mp3");
-
-// GET Carousel
-const getCarousel = async function () {
-  const result = await fetch("JSON/project.json");
-  const r = await result.json();
-
-  swiperBox.innerHTML = r
-    .map((item) => {
-      return `<li class="carousel__card swiper-slide" data-projectID="${item.projectID}">
-    <div class="carousel__img">
-      <img src=${item.projectImg} alt="" />
-    </div>
-    <div class="carousel__txt">
-      <div class="carousel__sub-txt grid">
-        <div class="txt__box-three">
-          <h5 class="fifth--title">${item.projectName}</h5>
-          <p class="para--fourth">${item.desc}</p>
-        </div>
-
-        <div class="carousel__links flex">
-          <a
-            href="${item.siteLink}"
-            target="_blank"
-            class="carousel__link"
-            ><ion-icon
-              class="carousel__icon"
-              name="link-outline"
-            ></ion-icon
-          ></a>
-          <a
-            href="${item.gitLink}"
-            target="_blank"
-            class="carousel__link"
-            ><ion-icon
-              class="carousel__icon"
-              name="logo-github"
-            ></ion-icon
-          ></a>
-          <a href="#" class="carousel__link"
-            ><ion-icon
-              class="carousel__icon"
-              name="ellipsis-horizontal-outline"
-            ></ion-icon
-          ></a>
-        </div>
-      </div>
-    </div>
-  </li>`;
-    })
-    .join("");
-};
-// --------------------------------
-
-// Preloader
-const showSite = function () {
-  preloader.classList.add("opacity-zero");
-
-  setTimeout(() => {
-    preloader.style.display = "none";
-  }, 1000);
-};
-
-window.addEventListener("load", function () {
-  getCarousel();
-  setTimeout(() => {
-    preloaderTextOne.classList.add("opacity-zero");
-    preloaderTextTwo.classList.add("opacity-zero");
-    showSite();
-  }, 1000);
 });
 // --------------------------------
 
