@@ -74,7 +74,7 @@
   {
     "projectId": 6,
     "projectName": "E-commerce",
-    "desc": "This project is a dynamic e-commerce webpage where users can browse products, add items to their cart, and remove items as needed. Click on cart button to see their products.",
+    "desc": "This project is a static e-commerce webpage where users can browse products, add items to their cart, and remove items as needed. Click on cart button to see their products.",
     "about": "",
     "projectImg": "ProjectImage/e-commerce.webp",
     "siteLink": "https://e-commercees.netlify.app/",
