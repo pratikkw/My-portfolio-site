@@ -13,6 +13,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 // --------------------------------
 
+const preloaderShowcase = document.querySelector(".preloader__showcase");
 const showcaseBox = document.querySelector(".showcase__cards");
 const darkModeBtn = document.querySelector(".darkmode__icon");
 const toggleAudio = new Audio("../audio/on-off-sound.mp3");
@@ -81,6 +82,7 @@ const checkMode = function () {
 window.addEventListener("load", function () {
   getCarousel();
   checkMode();
+  preloaderShowcase.style.display = "none";
 });
 
 darkModeBtn.addEventListener("click", function () {

@@ -1,6 +1,6 @@
 "use strict";
 
-const preloader = document.querySelector(".preloader");
+const preloaderHome = document.querySelector(".preloader__home");
 const preloaderTextOne = document.querySelector(".preloader__text-one");
 const preloaderTextTwo = document.querySelector(".preloader__text-two");
 const swiperBox = document.querySelector(".swiper-wrapper");
@@ -131,10 +131,10 @@ const getCarousel = async function () {
 
 // Preloader
 const showSite = function () {
-  preloader.classList.add("opacity-zero");
+  preloaderHome.classList.add("opacity-zero");
 
   setTimeout(() => {
-    preloader.style.display = "none";
+    preloaderHome.style.display = "none";
   }, 1000);
 };
 

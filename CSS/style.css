@@ -44,6 +44,7 @@ a {
   --project-section-bk-clr: #6fb5cf;
   --showcase-bk-clr: #edf6f9;
   --project-header-bk-clr: #a0c4dc;
+  --preloader-circle-clr: #00a7db;
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
   --see-project-hover-link-border-clr: #000;
@@ -281,12 +282,13 @@ html.lenis body {
   position: fixed;
   inset: 0;
   background-color: var(--loading-page-bk-clr);
-  opacity: 1;
-  z-index: 50;
+  z-index: 200;
   pointer-events: none;
   display: grid;
-  place-items: center;
-  transition: opacity 0.3s 0.5s ease-in; }
+  place-items: center; }
+  .preloader__home, .preloader__showcase {
+    opacity: 1;
+    transition: opacity 0.3s 0.5s ease-in; }
   .preloader__text {
     font-size: var(--preloader-fs);
     color: var(--white-clr);
@@ -300,6 +302,19 @@ html.lenis body {
       font-weight: 400;
       opacity: 1;
       transition: opacity 0.3s 0.15s ease-in; }
+  .preloader .loading__circle {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 0.75rem solid var(--white-clr);
+    border-top: 0.75rem solid var(--preloader-circle-clr);
+    animation: loadingCircle 1.25s linear infinite; }
+
+@keyframes loadingCircle {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .intro__btn {
   font-size: var(--intro-btn-fs);

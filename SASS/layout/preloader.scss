@@ -2,14 +2,17 @@
   position: fixed;
   inset: 0;
   background-color: var(--loading-page-bk-clr);
-  opacity: 1;
-  z-index: 50;
+  z-index: 200;
 
   pointer-events: none;
   display: grid;
   place-items: center;
 
-  transition: opacity 0.3s 0.5s ease-in;
+  &__home,
+  &__showcase {
+    opacity: 1;
+    transition: opacity 0.3s 0.5s ease-in;
+  }
 
   &__text {
     font-size: var(--preloader-fs);
@@ -29,6 +32,25 @@
       opacity: 1;
 
       transition: opacity 0.3s 0.15s ease-in;
+    }
+  }
+
+  .loading__circle {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 0.75rem solid var(--white-clr);
+    border-top: 0.75rem solid var(--preloader-circle-clr);
+    animation: loadingCircle 1.25s linear infinite;
+  }
+
+  @keyframes loadingCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
     }
   }
 }
