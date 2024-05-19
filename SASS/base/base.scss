@@ -134,6 +134,10 @@ body {
   color: var(--body-text-clr);
 }
 
+.project__body {
+  background-color: var(--showcase-bk-clr);
+}
+
 .flex {
   display: flex;
   align-items: center;
