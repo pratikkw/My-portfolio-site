@@ -14,6 +14,8 @@ requestAnimationFrame(raf);
 // --------------------------------
 
 const showcaseBox = document.querySelector(".showcase__cards");
+const darkModeBtn = document.querySelector(".darkmode__icon");
+const toggleAudio = new Audio("../audio/on-off-sound.mp3");
 
 const getCarousel = async function () {
   const result = await fetch("../JSON/project.json");
@@ -35,7 +37,7 @@ const getCarousel = async function () {
           <div class="carousel__links flex">
           <span class="showcase__date">${item.date}</span>
             <a
-              href="https://music-playerx.netlify.app/"
+              href="${item.siteLink}"
               target="_blank"
               class="carousel__link"
               ><ion-icon
@@ -44,7 +46,7 @@ const getCarousel = async function () {
               ></ion-icon
             ></a>
             <a
-              href="https://github.com/pratikkw/Music-Player"
+              href="${item.gitLink}"
               target="_blank"
               class="carousel__link"
               ><ion-icon
@@ -63,10 +65,34 @@ const getCarousel = async function () {
       </div>
     </li>`;
     })
+    .reverse()
     .join("");
 };
 
-window.addEventListener("load", getCarousel);
+const checkMode = function () {
+  const mode = localStorage.getItem("mode");
+  if (mode === "dark") {
+    document.body.classList.add("darkMode");
+  } else if (mode === "light") {
+    document.body.classList.remove("darkMode");
+  }
+};
+
+window.addEventListener("load", function () {
+  getCarousel();
+  checkMode();
+});
+
+darkModeBtn.addEventListener("click", function () {
+  document.body.classList.toggle("darkMode");
+  toggleAudio.play();
+
+  if (document.body.classList.contains("darkMode")) {
+    localStorage.setItem("mode", "dark");
+  } else {
+    localStorage.setItem("mode", "light");
+  }
+});
 
 // Link Hover
 showcaseBox.addEventListener("mouseover", function (e) {

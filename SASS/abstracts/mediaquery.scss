@@ -59,7 +59,7 @@
 
   .showcase__card:has(.carousel__sub-txt:hover) .carousel__sub-txt {
     height: 100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
   }
 
   .showcase__card:has(.carousel__sub-txt:hover) .para--fourth {

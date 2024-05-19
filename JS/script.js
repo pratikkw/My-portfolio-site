@@ -121,6 +121,7 @@ const getCarousel = async function () {
     </div>
   </li>`;
     })
+    .reverse()
     .join("");
 
   const carouselCards = document.querySelectorAll(".carousel__card");

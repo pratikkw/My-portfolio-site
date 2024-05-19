@@ -50,6 +50,8 @@ a {
   --intro-bk-clr: #edf6f9;
   --about-section-bk-clr: #d3ffe9;
   --project-section-bk-clr: #6fb5cf;
+  --showcase-bk-clr: #edf6f9;
+  --project-header-bk-clr: #a0c4dc;
 
   // BTN
   --intro-btn-bk-clr: transparent;
@@ -86,6 +88,9 @@ a {
 
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
+
+  // SHADOW
+  --showcase-card-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.6);
 
   // BULB CLR
   --bulb-wire-clr: #000;

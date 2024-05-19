@@ -42,6 +42,8 @@ a {
   --intro-bk-clr: #edf6f9;
   --about-section-bk-clr: #d3ffe9;
   --project-section-bk-clr: #6fb5cf;
+  --showcase-bk-clr: #edf6f9;
+  --project-header-bk-clr: #a0c4dc;
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
   --see-project-hover-link-border-clr: #000;
@@ -66,6 +68,7 @@ a {
   --skill-border-clr: #000;
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
+  --showcase-card-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.6);
   --bulb-wire-clr: #000;
   --bulb-cap-clr: #4c4b49;
   --bulb-outersurface-clr: #525563;
@@ -241,32 +244,34 @@ html.lenis body {
   color: var(--see-project-txt-clr);
   font-size: var(--see-all-project-fs); }
 
-.container__primary {
-  max-width: 1200px;
-  width: 100%;
-  margin-inline: auto; }
+.project__main {
+  background-color: var(--showcase-bk-clr); }
 
 .project__header {
+  --project-header-padding: 0.75rem 1rem;
+  --darkmode-fs: 2rem;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #ffeaa7;
-  padding: 0.75rem 1rem; }
+  background-color: var(--project-header-bk-clr);
+  padding: var(--project-header-padding); }
   .project__header_subbox {
-    max-width: 1100px;
-    margin-inline: auto;
-    width: 100%;
     justify-content: space-between; }
 
 .icon__box > * {
-  font-size: 2rem; }
+  font-size: var(--darkmode-fs);
+  cursor: pointer; }
 
 .showcase {
-  padding: 1.5rem 1.5rem; }
+  --showcase-padding: 1.5rem 1.5rem;
+  --showcase-cards-gap: 2rem 1.75rem;
+  padding: var(--showcase-padding); }
   .showcase__cards {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem 1.5rem; }
+    gap: var(--showcase-cards-gap); }
+  .showcase__card {
+    box-shadow: var(--showcase-card-shadow); }
   .showcase__sub-txt {
     overflow: hidden; }
   .showcase__date {
@@ -332,7 +337,8 @@ html.lenis body {
     height: auto; }
   .carousel__card {
     position: relative;
-    user-select: none; }
+    user-select: none;
+    border-radius: 0.5rem; }
   .carousel__img > img {
     border-radius: 0.5rem;
     height: var(--carousel-img-height);
@@ -408,6 +414,11 @@ html.lenis body {
   -webkit-box-orient: vertical;
   overflow: hidden; }
 
+.container__primary {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto; }
+
 .sticky {
   position: sticky;
   top: 0;
@@ -427,6 +438,8 @@ html.lenis body {
   --intro-bk-clr: #0d1317;
   --about-section-bk-clr: #201e1f;
   --project-section-bk-clr: #2f1b25;
+  --showcase-bk-clr: #0d1317;
+  --project-header-bk-clr: #6eb5cf;
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
   --see-project-hover-link-border-clr: #fff;
@@ -446,6 +459,7 @@ html.lenis body {
   --fourth-para-clr: #fff;
   --occ-txt-clr: #00a7db;
   --skill-text-clr: #fff;
+  --showcase-card-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.3);
   --btn-border-clr: hsla(0, 0%, 100%, 0.5);
   --soc-link-border-clr: #fff;
   --skill-border-clr: #fff;
@@ -499,7 +513,7 @@ html.lenis body {
     cursor: pointer; }
   .showcase__card:has(.carousel__sub-txt:hover) .carousel__sub-txt {
     height: 100%;
-    backdrop-filter: blur(2px); }
+    backdrop-filter: blur(4px); }
   .showcase__card:has(.carousel__sub-txt:hover) .para--fourth {
     -webkit-line-clamp: initial;
     font-size: 1.25rem; }
