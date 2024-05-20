@@ -11,6 +11,7 @@
   --detail-sub-txt--one-gap: 1.25rem;
   --detail-sub-txt--two-gap: 0.75rem;
 
+  background-color: var(--detail-bk-clr);
   grid-template-columns: 1fr 1.25fr;
   gap: var(--detail-gap);
   height: 100dvh;
@@ -33,7 +34,7 @@
     gap: var(--detail-sub-txt--one-gap);
 
     & > h1 {
-      border-bottom: 0.25rem solid #000;
+      border-bottom: 0.25rem solid var(--detail-pri-title-border-clr);
     }
   }
 

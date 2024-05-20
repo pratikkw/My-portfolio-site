@@ -111,7 +111,7 @@ const getCarousel = async function () {
               name="logo-github"
             ></ion-icon
           ></a>
-          <a href="detail.html?id=${item.projectId}" class="carousel__link"
+          <a href="../HTML/detail.html?id=${item.projectId}" class="carousel__link"
             ><ion-icon
               class="carousel__icon"
               name="ellipsis-horizontal-outline"

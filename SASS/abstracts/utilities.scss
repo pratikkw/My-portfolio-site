@@ -23,6 +23,9 @@
 }
 
 .darkMode {
+  --white-clr: hsl(0, 0%, 100%);
+  --black-clr: hsl(0, 0%, 0%);
+
   // BACKGROUND CLR
   --loading-page-bk-clr: #000103;
   --intro-bk-clr: #0d1317;
@@ -30,6 +33,7 @@
   --project-section-bk-clr: #2f1b25;
   --showcase-bk-clr: #0d1317;
   --project-header-bk-clr: #6eb5cf;
+  --detail-bk-clr: #201e1f;
 
   // BTN
   --intro-btn-bk-clr: transparent;
@@ -66,9 +70,7 @@
   --btn-border-clr: hsla(0, 0%, 100%, 0.5);
   --soc-link-border-clr: #fff;
   --skill-border-clr: #fff;
-
-  --white-clr: hsl(0, 0%, 100%);
-  --black-clr: hsl(0, 0%, 0%);
+  --detail-pri-title-border-clr: hsla(0, 0%, 100%, 0.85);
 
   --bulb-wire-clr: pink;
   --bulb-cap-clr: #e8e5de;

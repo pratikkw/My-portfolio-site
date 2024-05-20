@@ -45,6 +45,9 @@ a {
 }
 
 :root {
+  --white-clr: hsl(0, 0%, 100%);
+  --black-clr: hsl(0, 0%, 0%);
+
   // BACKGROUND CLR
   --loading-page-bk-clr: #000103;
   --intro-bk-clr: #edf6f9;
@@ -52,6 +55,7 @@ a {
   --project-section-bk-clr: #6fb5cf;
   --showcase-bk-clr: #edf6f9;
   --project-header-bk-clr: #a0c4dc;
+  --detail-bk-clr: #edf6f9;
 
   // PRELOADER
   --preloader-circle-clr: #00a7db;
@@ -88,9 +92,7 @@ a {
   --btn-border-clr: hsla(0, 0%, 0%, 0.5);
   --soc-link-border-clr: #000;
   --skill-border-clr: #000;
-
-  --white-clr: hsl(0, 0%, 100%);
-  --black-clr: hsl(0, 0%, 0%);
+  --detail-pri-title-border-clr: hsla(0, 0%, 0%, 0.85);
 
   // SHADOW
   --showcase-card-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.6);

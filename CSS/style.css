@@ -38,12 +38,15 @@ a {
   color: inherit; }
 
 :root {
+  --white-clr: hsl(0, 0%, 100%);
+  --black-clr: hsl(0, 0%, 0%);
   --loading-page-bk-clr: #000103;
   --intro-bk-clr: #edf6f9;
   --about-section-bk-clr: #d3ffe9;
   --project-section-bk-clr: #6fb5cf;
   --showcase-bk-clr: #edf6f9;
   --project-header-bk-clr: #a0c4dc;
+  --detail-bk-clr: #edf6f9;
   --preloader-circle-clr: #00a7db;
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
@@ -67,8 +70,7 @@ a {
   --btn-border-clr: hsla(0, 0%, 0%, 0.5);
   --soc-link-border-clr: #000;
   --skill-border-clr: #000;
-  --white-clr: hsl(0, 0%, 100%);
-  --black-clr: hsl(0, 0%, 0%);
+  --detail-pri-title-border-clr: hsla(0, 0%, 0%, 0.85);
   --showcase-card-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.6);
   --bulb-wire-clr: #000;
   --bulb-cap-clr: #4c4b49;
@@ -193,7 +195,7 @@ html.lenis body {
   grid-column: 2/4; }
 
 .profile-img {
-  background-image: url(../../Image/img-4.jpg);
+  background-image: url(../../Image/pratik.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -284,6 +286,7 @@ html.lenis body {
   --detail-txt-gap: 2.75rem;
   --detail-sub-txt--one-gap: 1.25rem;
   --detail-sub-txt--two-gap: 0.75rem;
+  background-color: var(--detail-bk-clr);
   grid-template-columns: 1fr 1.25fr;
   gap: var(--detail-gap);
   height: 100dvh; }
@@ -300,7 +303,7 @@ html.lenis body {
     align-items: flex-start;
     gap: var(--detail-sub-txt--one-gap); }
     .detail__sub-txt--one > h1 {
-      border-bottom: 0.25rem solid #000; }
+      border-bottom: 0.25rem solid var(--detail-pri-title-border-clr); }
   .detail__sub-txt--two {
     gap: var(--detail-sub-txt--two-gap); }
     .detail__sub-txt--two > p {
@@ -477,12 +480,15 @@ html.lenis body {
   opacity: 1; }
 
 .darkMode {
+  --white-clr: hsl(0, 0%, 100%);
+  --black-clr: hsl(0, 0%, 0%);
   --loading-page-bk-clr: #000103;
   --intro-bk-clr: #0d1317;
   --about-section-bk-clr: #201e1f;
   --project-section-bk-clr: #2f1b25;
   --showcase-bk-clr: #0d1317;
   --project-header-bk-clr: #6eb5cf;
+  --detail-bk-clr: #201e1f;
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
   --see-project-hover-link-border-clr: #fff;
@@ -506,8 +512,7 @@ html.lenis body {
   --btn-border-clr: hsla(0, 0%, 100%, 0.5);
   --soc-link-border-clr: #fff;
   --skill-border-clr: #fff;
-  --white-clr: hsl(0, 0%, 100%);
-  --black-clr: hsl(0, 0%, 0%);
+  --detail-pri-title-border-clr: hsla(0, 0%, 100%, 0.85);
   --bulb-wire-clr: pink;
   --bulb-cap-clr: #e8e5de;
   --bulb-outersurface-clr: #e9e1c3;
