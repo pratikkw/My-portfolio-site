@@ -47,6 +47,7 @@ a {
   --showcase-bk-clr: #edf6f9;
   --project-header-bk-clr: #a0c4dc;
   --detail-bk-clr: #edf6f9;
+  --detail-txt-bk-clr: #edf6f9;
   --preloader-circle-clr: #00a7db;
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
@@ -286,16 +287,18 @@ html.lenis body {
   --detail-txt-gap: 2.75rem;
   --detail-sub-txt--one-gap: 1.25rem;
   --detail-sub-txt--two-gap: 0.75rem;
-  background-color: var(--detail-bk-clr);
+  display: grid;
   grid-template-columns: 1fr 1.25fr;
   gap: var(--detail-gap);
-  height: 100lvh; }
+  min-height: 100lvh;
+  background-color: var(--detail-bk-clr); }
   .detail__img {
     background-image: url(../../ProjectImage/blue-origin.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
   .detail__txt {
+    background-color: var(--detail-txt-bk-clr);
     align-self: flex-start;
     padding: var(--detail-txt-padding);
     gap: var(--detail-txt-gap); }
@@ -489,6 +492,7 @@ html.lenis body {
   --showcase-bk-clr: #0d1317;
   --project-header-bk-clr: #6eb5cf;
   --detail-bk-clr: #201e1f;
+  --detail-txt-bk-clr: #201e1f;
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
   --see-project-hover-link-border-clr: #fff;

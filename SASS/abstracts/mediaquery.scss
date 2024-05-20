@@ -115,11 +115,14 @@
 
 @media only screen and (max-width: 1000px) {
   .detail {
+    // display: block;
     grid-template-columns: 1fr;
     grid-template-rows: 70% auto;
+    // height: auto;
 
     &__img {
       background-attachment: fixed;
+      // height: 70dvh;
     }
   }
 }

@@ -11,10 +11,11 @@
   --detail-sub-txt--one-gap: 1.25rem;
   --detail-sub-txt--two-gap: 0.75rem;
 
-  background-color: var(--detail-bk-clr);
+  display: grid;
   grid-template-columns: 1fr 1.25fr;
   gap: var(--detail-gap);
-  height: 100lvh;
+  min-height: 100lvh;
+  background-color: var(--detail-bk-clr);
 
   &__img {
     background-image: url(../../ProjectImage/blue-origin.webp);
@@ -24,6 +25,7 @@
   }
 
   &__txt {
+    background-color: var(--detail-txt-bk-clr);
     align-self: flex-start;
     padding: var(--detail-txt-padding);
     gap: var(--detail-txt-gap);
