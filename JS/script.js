@@ -80,7 +80,8 @@ const getCarousel = async function () {
 
   swiperBox.innerHTML = r
     .map((item) => {
-      return `<li class="carousel__card swiper-slide" data-projectID="${item.projectID}">
+      return `
+  <li class="carousel__card swiper-slide" data-projectID="${item.projectID}">
     <div class="carousel__img">
       <img src=${item.projectImg} alt="" />
     </div>
@@ -110,7 +111,7 @@ const getCarousel = async function () {
               name="logo-github"
             ></ion-icon
           ></a>
-          <a href="#" class="carousel__link"
+          <a href="detail.html?id=${item.projectId}" class="carousel__link"
             ><ion-icon
               class="carousel__icon"
               name="ellipsis-horizontal-outline"

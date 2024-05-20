@@ -278,6 +278,34 @@ html.lenis body {
   .showcase__date {
     margin-right: auto; }
 
+.detail {
+  --detail-txt-padding: 1.75rem 2rem;
+  --detail-gap: 0rem;
+  --detail-txt-gap: 2.75rem;
+  --detail-sub-txt--one-gap: 1.25rem;
+  --detail-sub-txt--two-gap: 0.75rem;
+  grid-template-columns: 1fr 1.25fr;
+  gap: var(--detail-gap);
+  height: 100dvh; }
+  .detail__img {
+    background-image: url(../../ProjectImage/blue-origin.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .detail__txt {
+    align-self: flex-start;
+    padding: var(--detail-txt-padding);
+    gap: var(--detail-txt-gap); }
+  .detail__sub-txt--one {
+    align-items: flex-start;
+    gap: var(--detail-sub-txt--one-gap); }
+    .detail__sub-txt--one > h1 {
+      border-bottom: 0.25rem solid #000; }
+  .detail__sub-txt--two {
+    gap: var(--detail-sub-txt--two-gap); }
+    .detail__sub-txt--two > p {
+      line-height: 1.8; }
+
 .preloader {
   position: fixed;
   inset: 0;
@@ -560,6 +588,13 @@ html.lenis body {
     max-width: 65ch;
     width: 100%; } }
 
+@media only screen and (max-width: 1000px) {
+  .detail {
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% auto; }
+    .detail__img {
+      background-attachment: fixed; } }
+
 @media only screen and (max-width: 700px) {
   :root {
     --primary-para: 1.125rem; }
@@ -596,6 +631,8 @@ html.lenis body {
     --bulb-height: 7rem;
     --bulb-top: -10px;
     --bulb-left: -5px; }
+  .detail {
+    --detail-txt-padding: 2rem 1.5rem; }
   .about__section {
     --about-section-padding: 2.25rem 1.5rem;
     --about-one-gap: 1.25rem; }

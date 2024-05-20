@@ -113,6 +113,17 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .detail {
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% auto;
+
+    &__img {
+      background-attachment: fixed;
+    }
+  }
+}
+
 @media only screen and (max-width: 700px) {
   :root {
     --primary-para: 1.125rem;
@@ -137,9 +148,6 @@
 
     // GAP
     --about-one-gap: 1.5rem;
-  }
-
-  .about__section > * {
   }
 
   .project {
@@ -179,6 +187,10 @@
     // TOP & LEFT
     --bulb-top: -10px;
     --bulb-left: -5px;
+  }
+
+  .detail {
+    --detail-txt-padding: 2rem 1.5rem;
   }
 
   .about__section {

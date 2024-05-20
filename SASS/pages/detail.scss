@@ -1,0 +1,46 @@
+.detail-main {
+}
+
+.detail {
+  // PADDING
+  --detail-txt-padding: 1.75rem 2rem;
+
+  // GAP
+  --detail-gap: 0rem;
+  --detail-txt-gap: 2.75rem;
+  --detail-sub-txt--one-gap: 1.25rem;
+  --detail-sub-txt--two-gap: 0.75rem;
+
+  grid-template-columns: 1fr 1.25fr;
+  gap: var(--detail-gap);
+  height: 100dvh;
+
+  &__img {
+    background-image: url(../../ProjectImage/blue-origin.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__txt {
+    align-self: flex-start;
+    padding: var(--detail-txt-padding);
+    gap: var(--detail-txt-gap);
+  }
+
+  &__sub-txt--one {
+    align-items: flex-start;
+    gap: var(--detail-sub-txt--one-gap);
+
+    & > h1 {
+      border-bottom: 0.25rem solid #000;
+    }
+  }
+
+  &__sub-txt--two {
+    gap: var(--detail-sub-txt--two-gap);
+    & > p {
+      line-height: 1.8;
+    }
+  }
+}
