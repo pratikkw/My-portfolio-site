@@ -98,7 +98,7 @@
   .intro {
     position: sticky;
     top: 0;
-    height: 100dvh;
+    height: 100lvh;
   }
 
   .others {
@@ -139,7 +139,7 @@
   .others__subbox > * {
     position: relative;
     height: auto;
-    min-height: 100dvh;
+    min-height: 100lvh;
   }
 
   .about__section {
@@ -206,7 +206,7 @@
   }
 
   .carousel {
-    --carousel-img-height: 65dvh;
+    --carousel-img-height: 65lvh;
   }
 
   .see-project__link {

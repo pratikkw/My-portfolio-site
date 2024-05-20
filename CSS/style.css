@@ -95,7 +95,7 @@ a {
   --preloader-textOne-right-mg: 0.25rem; }
 
 body {
-  min-height: 100dvh;
+  min-height: 100lvh;
   position: relative;
   isolation: isolate;
   font-family: "Lato", sans-serif;
@@ -289,7 +289,7 @@ html.lenis body {
   background-color: var(--detail-bk-clr);
   grid-template-columns: 1fr 1.25fr;
   gap: var(--detail-gap);
-  height: 100dvh; }
+  height: 100lvh; }
   .detail__img {
     background-image: url(../../ProjectImage/blue-origin.webp);
     background-repeat: no-repeat;
@@ -373,7 +373,7 @@ html.lenis body {
   --carousel-txt-padding: 0.75rem 1.5rem;
   --carousel-box-gap: 1.5rem;
   --carousel-txt-gap: 0.5rem;
-  --carousel-img-height: 65dvh;
+  --carousel-img-height: 65lvh;
   --carousel-img-width: 100%;
   --fifth-title-mg-bttm: 0.5rem;
   --carousel-icon-fs: 1.5rem;
@@ -584,7 +584,7 @@ html.lenis body {
   .intro {
     position: sticky;
     top: 0;
-    height: 100dvh; }
+    height: 100lvh; }
   .others {
     position: sticky;
     top: 0;
@@ -609,7 +609,7 @@ html.lenis body {
   .others__subbox > * {
     position: relative;
     height: auto;
-    min-height: 100dvh; }
+    min-height: 100lvh; }
   .about__section {
     --about-section-padding: 2.5rem 2rem;
     --about-one-gap: 1.5rem; }
@@ -644,7 +644,7 @@ html.lenis body {
   .project {
     --txt-box-two-padding: 2.25rem 1.5rem 0.5rem 1.5rem; }
   .carousel {
-    --carousel-img-height: 65dvh; }
+    --carousel-img-height: 65lvh; }
   .see-project__link {
     margin-bottom: var(--see-project-link-mg-bttm); }
   .showcase__cards {
