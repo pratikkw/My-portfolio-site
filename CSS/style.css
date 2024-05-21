@@ -52,6 +52,7 @@ a {
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
   --see-project-hover-link-border-clr: #000;
+  --detail-link-icon-clr: #000;
   --occ-txt-clr: #000;
   --btn-text-clr: #000;
   --soc-link-text-clr: #000;
@@ -284,16 +285,19 @@ html.lenis body {
 .detail {
   --detail-txt-padding: 1.75rem 2rem;
   --detail-gap: 0rem;
-  --detail-txt-gap: 2.75rem;
+  --detail-txt-gap: 1.5rem;
   --detail-sub-txt--one-gap: 1.25rem;
   --detail-sub-txt--two-gap: 0.75rem;
+  --detail-links-gap: 1.25rem;
+  --detail-lists-gap: 0.5rem;
+  --detail-link-icon-txt-fs: 1.75rem;
+  --detail-lists-margin-top: 0.75rem;
   display: grid;
   grid-template-columns: 1fr 1.25fr;
   gap: var(--detail-gap);
   min-height: 100lvh;
   background-color: var(--detail-bk-clr); }
   .detail__img {
-    background-image: url(../../ProjectImage/blue-origin.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
@@ -311,6 +315,17 @@ html.lenis body {
     gap: var(--detail-sub-txt--two-gap); }
     .detail__sub-txt--two > p {
       line-height: 1.8; }
+  .detail__links {
+    justify-content: flex-end;
+    gap: var(--detail-links-gap); }
+    .detail__links a > * {
+      font-size: var(--detail-link-icon-txt-fs);
+      color: var(--detail-link-icon-clr); }
+  .detail__lists {
+    gap: var(--detail-lists-gap);
+    margin-top: var(--detail-lists-margin-top); }
+    .detail__lists > li {
+      list-style-type: circle; }
 
 .preloader {
   position: fixed;
@@ -491,11 +506,12 @@ html.lenis body {
   --project-section-bk-clr: #2f1b25;
   --showcase-bk-clr: #0d1317;
   --project-header-bk-clr: #6eb5cf;
-  --detail-bk-clr: #201e1f;
-  --detail-txt-bk-clr: #201e1f;
+  --detail-bk-clr: #0d1317;
+  --detail-txt-bk-clr: #0d1317;
   --intro-btn-bk-clr: transparent;
   --intro-btn-bk-hover-clr: #7cb4c4;
   --see-project-hover-link-border-clr: #fff;
+  --detail-link-icon-clr: #fff;
   --occ-txt-clr: #000;
   --btn-text-clr: #fff;
   --soc-link-text-clr: #fff;
@@ -548,7 +564,8 @@ html.lenis body {
     width: 100%;
     left: 0;
     right: auto; }
-  .carousel__link {
+  .carousel__link,
+  .detail__link {
     transition: opacity 0.3s ease-in; }
   .link {
     transition: border 0.3s ease-in; }
@@ -573,7 +590,8 @@ html.lenis body {
     font-size: 2.125rem; } }
 
 @media only screen and (hover: none) {
-  .carousel__link {
+  .carousel__link,
+  .detail__link {
     opacity: 1 !important; } }
 
 @media only screen and (max-width: 1200px) {

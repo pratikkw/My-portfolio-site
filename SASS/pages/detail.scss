@@ -7,9 +7,17 @@
 
   // GAP
   --detail-gap: 0rem;
-  --detail-txt-gap: 2.75rem;
+  --detail-txt-gap: 1.5rem;
   --detail-sub-txt--one-gap: 1.25rem;
   --detail-sub-txt--two-gap: 0.75rem;
+  --detail-links-gap: 1.25rem;
+  --detail-lists-gap: 0.5rem;
+
+  // FONT
+  --detail-link-icon-txt-fs: 1.75rem;
+
+  // MARGIN
+  --detail-lists-margin-top: 0.75rem;
 
   display: grid;
   grid-template-columns: 1fr 1.25fr;
@@ -18,7 +26,6 @@
   background-color: var(--detail-bk-clr);
 
   &__img {
-    background-image: url(../../ProjectImage/blue-origin.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -44,6 +51,24 @@
     gap: var(--detail-sub-txt--two-gap);
     & > p {
       line-height: 1.8;
+    }
+  }
+
+  &__links {
+    justify-content: flex-end;
+    gap: var(--detail-links-gap);
+    a > * {
+      font-size: var(--detail-link-icon-txt-fs);
+      color: var(--detail-link-icon-clr);
+    }
+  }
+
+  &__lists {
+    gap: var(--detail-lists-gap);
+    margin-top: var(--detail-lists-margin-top);
+
+    & > li {
+      list-style-type: circle;
     }
   }
 }

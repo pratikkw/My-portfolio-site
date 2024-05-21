@@ -28,7 +28,8 @@
     right: auto;
   }
 
-  .carousel__link {
+  .carousel__link,
+  .detail__link {
     transition: opacity 0.3s ease-in;
   }
 
@@ -73,7 +74,8 @@
 }
 
 @media only screen and (hover: none) {
-  .carousel__link {
+  .carousel__link,
+  .detail__link {
     opacity: 1 !important;
   }
 }

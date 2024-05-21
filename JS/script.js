@@ -79,6 +79,9 @@ const getCarousel = async function () {
   const r = await result.json();
 
   swiperBox.innerHTML = r
+    .filter((item) => {
+      return item.featureProject == true;
+    })
     .map((item) => {
       return `
   <li class="carousel__card swiper-slide" data-projectID="${item.projectID}">

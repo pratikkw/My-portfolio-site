@@ -34,6 +34,10 @@ const getCarousel = async function () {
       return `<div class="detail__sub-txt--one grid">
     <h1 class="primary--title">${item.projectName}</h1>
     <p class="para--primary">${item.desc}</p>
+    <div class="detail__links flex">
+    <a href="${item.siteLink}" class="detail__link"><ion-icon class="detail__icon" name="link-outline"></ion-icon></a>
+    <a href="${item.gitLink}" class="detail__link"><ion-icon class="detail__icon" name="logo-github"></ion-icon></a>
+    </div>
   </div>
   <div class="detail__sub-txt--two grid">
     <h2 class="secondary--title">About</h2>
@@ -57,3 +61,26 @@ window.addEventListener("load", function () {
   checkMode();
   preloaderDetail.style.display = "none";
 });
+
+// Link Hover
+detailTxtbox.addEventListener("mouseover", function (e) {
+  const targetEle = e.target;
+
+  if (!targetEle.classList.contains("detail__icon")) return;
+  const targetEleTwo = targetEle.closest(".detail__link");
+  const linkBox = targetEle.closest(".detail__links");
+  const child = linkBox.children;
+
+  [...child]
+    .filter((item) => {
+      return item.classList.contains("detail__link");
+    })
+    .forEach((item) => {
+      if (item != targetEleTwo) item.style.opacity = "0.15";
+    });
+
+  linkBox.addEventListener("mouseout", function (e) {
+    [...child].forEach((item) => (item.style.opacity = "1"));
+  });
+});
+// --------------------------------
