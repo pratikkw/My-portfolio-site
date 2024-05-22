@@ -276,7 +276,8 @@ skills.forEach((item) => {
   });
 });
 
-gsap.set(textTwo.words, {
+gsap.set(textTwo.lines, {
+  y: 30,
   opacity: 0,
 });
 
@@ -294,11 +295,10 @@ tl.to(skills, {
   ease: "sine.out",
 });
 
-tl.to(textTwo.words, {
+tl.to(textTwo.lines, {
+  y: 0,
   opacity: 1,
   stagger: 0.25,
   ease: "sine.out",
-  duration: 1,
 });
-
 // --------------------------------

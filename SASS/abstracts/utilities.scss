@@ -1,5 +1,5 @@
 .container__primary {
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   margin-inline: auto;
 }
@@ -27,7 +27,7 @@
   --black-clr: hsl(0, 0%, 0%);
 
   // BACKGROUND CLR
-  --loading-page-bk-clr: #000103;
+  --loading-page-bk-clr: hwb(216 0% 98%);
   --intro-bk-clr: #0d1317;
   --about-section-bk-clr: #201e1f;
   --project-section-bk-clr: #2f1b25;

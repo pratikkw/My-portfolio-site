@@ -5,10 +5,12 @@
     "desc": "This project is a fully responsive UI clone of the Starlink landing page. It faithfully replicates the design and layout of Starlink's official site, highlighting the company's mission, services, and technological innovations.",
     "about": "<p class='para--secondary'>This project is a meticulously crafted user interface clone of the Starlink landing page, designed to mirror the look and feel of the original website. The clone is built using HTML, CSS, SASS & JavaScript, ensuring a modern and responsive design that adapts seamlessly across various devices and screen sizes.</p>",
     "projectImg": "ProjectImage/blue-origin__02.webp",
+    "realImg": "RealImage/starlink.webp",
     "siteLink": "https://starlinksss.netlify.app/",
     "gitLink": "https://github.com/pratikkw/Starlink",
     "featureProject": true,
-    "date": "5/7/23"
+    "date": "5/7/23",
+    "show": true
   },
 
   {
@@ -17,10 +19,12 @@
     "desc": "This project is a fully responsive UI clone of the Blue Origin landing page. It replicates the design and layout of Blue Origin's official site, showcasing the company's mission, services, and achievements with high fidelity.",
     "about": "<p class='para--secondary'>This project is a user interface clone of the Blue Origin landing page. Designed to closely replicate the visual and functional elements of the original site, this clone was developed using HTML, CSS, SASS & JavaScript to ensure a modern, responsive, and engaging user experience.</p>",
     "projectImg": "ProjectImage/blue-origin.webp",
+    "realImg": "RealImage/blue-origin.webp",
     "siteLink": "https://blue-originss.netlify.app/",
     "gitLink": "https://github.com/pratikkw/Blue-Origin",
     "featureProject": true,
-    "date": "10/7/23"
+    "date": "10/7/23",
+    "show": true
   },
 
   {
@@ -29,10 +33,12 @@
     "desc": "A responsive password generator application designed to create secure and random passwords for users. It ensures strong security by generating passwords that can include a mix of letters, numbers, and special characters.",
     "about": "<p class='para--secondary'>This project is a robust password generator application developed using HTML, CSS & JavaScript. It allows users to generate strong, random passwords tailored to their specific needs. <br> <ul class='detail__lists grid'> <li class='para--secondary'>Customizable Password Length</li> <li class='para--secondary'>Character Type Filters:- Numbers, Symbols, Uppercase Letters, Lowercase Letters</li></ul></p>",
     "projectImg": "ProjectImage/lock.webp",
+    "realImg": "RealImage/random-password.png",
     "siteLink": "https://random-password-generatorss.netlify.app/",
     "gitLink": "https://github.com/pratikkw/Random-Password-Generator-main",
     "featureProject": true,
-    "date": "24/9/23"
+    "date": "24/9/23",
+    "show": true
   },
 
   {
@@ -41,10 +47,12 @@
     "desc": "This project is a fully responsive landing page. The page provides an engaging and seamless user experience across all devices, showcasing the company's services and values.",
     "about": "<p class='para--secondary'>This project is a fully responsive landing page for the company AboveSky(fictional), developed using HTML, CSS & JavaScript. The landing page is designed to provide a seamless and engaging user experience.</p>",
     "projectImg": "ProjectImage/skyscrapper.webp",
+    "realImg": "RealImage/abovesky.webp",
     "siteLink": "https://abovesky.netlify.app/",
     "gitLink": "https://github.com/pratikkw/AboveSky",
     "featureProject": true,
-    "date": "15/10/23"
+    "date": "15/10/23",
+    "show": true
   },
 
   {
@@ -53,10 +61,12 @@
     "desc": "This application provides comprehensive information about any country in the world. By searching for a country, users can access detailed data and see the country's location on a world map.",
     "about": "<p class='para--secondary'>'Where in the World' is a comprehensize web application designed to provide detailed information about countries around the globe. Developed using HTML, CSS, JavaScript, the <a href='https://github.com/apilayer/restcountries' target='_blank'>REST Countries API</a> & the <a href='https://leafletjs.com/' target='_blank'>Leaflet library</a> this application allows users to retrieve data about specific countries and visualize their locations on a world map. Features:-<br> <ul class='detail__lists grid'> <li class='para--secondary'>Search any country & Get data about that country.</li> <li class='para--secondary'>See country on world map.</li> <li class='para--secondary'>Auto suggestion search box</li> <li class='para--secondary'>If you search the wrong country then a popup slider will come out to display error.</li> </ul> </p>",
     "projectImg": "ProjectImage/globe.webp",
+    "realImg": "RealImage/music-player.webp",
     "siteLink": "https://where-in-the-world-applicationxx.netlify.app/",
     "gitLink": "https://github.com/pratikkw/Where-in-the-world",
-    "featureProject": true,
-    "date": "5/11/23"
+    "featureProject": false,
+    "date": "5/11/23",
+    "show": false
   },
 
   {
@@ -65,10 +75,12 @@
     "desc": "This project is a fully functional music player built using HTML, CSS, and JavaScript. It allows users to play, pause, and navigate through a collection of songs with ease, providing an intuitive and engaging audio experience.",
     "about": "<p class='para--secondary'>This project is fully responsive music player application developed using HTML, CSS & JavaScript. Designed to offer an intuitive and enjoyable user experience, this music player allows users to play, pause, skip tracks and manage their playlist seamlessly across various devices. Features:- <br> <ul class='detail__lists grid'> <li class='para--secondary'>While song is playing, if you double click on the img then img start rotating. For stop the rotating do the same.</li> <li class='para--secondary'>Loop the song.</li> <li class='para--secondary'>Change the music duration by draging the playback bar.</li>  </ul></p>",
     "projectImg": "ProjectImage/music-player.webp",
+    "realImg": "RealImage/music-player.webp",
     "siteLink": "https://music-playerx.netlify.app/",
     "gitLink": "https://github.com/pratikkw/Music-Player",
     "featureProject": true,
-    "date": "31/11/23"
+    "date": "31/11/23",
+    "show": true
   },
 
   {
@@ -77,9 +89,11 @@
     "desc": "This project is a static e-commerce webpage where users can browse products, add items to their cart, and remove items as needed. Click on cart button to see their products.",
     "about": "<p class='para--secondary'>This project is a simple yet functional e-commerce page developed using HTML, CSS & JavaScript. Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>Used localSotrage, So, if you refresh the page your item will be there.</li> <li class='para--secondary'>Checkout Slider.</li> </ul></p>",
     "projectImg": "ProjectImage/e-commerce.webp",
+    "realImg": "RealImage/e-commerce.webp",
     "siteLink": "https://e-commercees.netlify.app/",
     "gitLink": "https://github.com/pratikkw/E-commerce-store-page",
     "featureProject": true,
-    "date": "7/1/24"
+    "date": "7/1/24",
+    "show": true
   }
 ]

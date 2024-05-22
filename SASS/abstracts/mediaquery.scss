@@ -19,7 +19,7 @@
   .btn:hover {
     color: var(--white-clr);
     gap: 1rem;
-    border-color: #fff;
+    border-color: var(--white-clr);
   }
 
   .btn:hover::after {
@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 75rem) {
   .home__section {
     grid-template-columns: 1fr;
 
@@ -115,7 +115,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 62.5rem) {
   .detail {
     grid-template-columns: 1fr;
     grid-template-rows: 70% auto;
@@ -126,7 +126,7 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43.75rem) {
   :root {
     --primary-para: 1.125rem;
   }
@@ -157,7 +157,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 31.25rem) {
   :root {
     --primary-title: 2.25rem;
     --fifth-title: 1.35rem;
@@ -217,7 +217,7 @@
 
   .showcase {
     &__cards {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
     }
   }
 }

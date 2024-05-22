@@ -28,7 +28,7 @@ const getCarousel = async function () {
   });
   const [ourCardImg] = ourCard;
 
-  detailImagebox.style.backgroundImage = `url(../../${ourCardImg.projectImg})`;
+  detailImagebox.style.backgroundImage = `url(../../${ourCardImg.realImg})`;
   detailTxtbox.innerHTML = ourCard
     .map((item) => {
       return `<div class="detail__sub-txt--one grid">

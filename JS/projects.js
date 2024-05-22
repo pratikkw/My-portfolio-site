@@ -23,6 +23,9 @@ const getCarousel = async function () {
   const r = await result.json();
 
   showcaseBox.innerHTML = r
+    .filter((item) => {
+      return item.show == true;
+    })
     .map((item) => {
       return `<li class="carousel__card showcase__card">
       <div class="carousel__img">

@@ -273,7 +273,7 @@ html.lenis body {
   --showcase-cards-gap: 2rem 1.75rem;
   padding: var(--showcase-padding); }
   .showcase__cards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
     gap: var(--showcase-cards-gap); }
   .showcase__card {
     box-shadow: var(--showcase-card-shadow); }
@@ -300,7 +300,7 @@ html.lenis body {
   .detail__img {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; }
+    background-size: contain; }
   .detail__txt {
     background-color: var(--detail-txt-bk-clr);
     align-self: flex-start;
@@ -479,7 +479,7 @@ html.lenis body {
   overflow: hidden; }
 
 .container__primary {
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   margin-inline: auto; }
 
@@ -500,7 +500,7 @@ html.lenis body {
 .darkMode {
   --white-clr: hsl(0, 0%, 100%);
   --black-clr: hsl(0, 0%, 0%);
-  --loading-page-bk-clr: #000103;
+  --loading-page-bk-clr: hwb(216 0% 98%);
   --intro-bk-clr: #0d1317;
   --about-section-bk-clr: #201e1f;
   --project-section-bk-clr: #2f1b25;
@@ -559,7 +559,7 @@ html.lenis body {
   .btn:hover {
     color: var(--white-clr);
     gap: 1rem;
-    border-color: #fff; }
+    border-color: var(--white-clr); }
   .btn:hover::after {
     width: 100%;
     left: 0;
@@ -594,7 +594,7 @@ html.lenis body {
   .detail__link {
     opacity: 1 !important; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 75rem) {
   .home__section {
     grid-template-columns: 1fr;
     --intro-gap: 10rem;
@@ -615,14 +615,14 @@ html.lenis body {
     max-width: 65ch;
     width: 100%; } }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 62.5rem) {
   .detail {
     grid-template-columns: 1fr;
     grid-template-rows: 70% auto; }
     .detail__img {
       background-attachment: fixed; } }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43.75rem) {
   :root {
     --primary-para: 1.125rem; }
   .home__section {
@@ -638,7 +638,7 @@ html.lenis body {
   .project {
     --txt-box-two-padding: 2.5rem 2rem 0.5rem 2rem; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 31.25rem) {
   :root {
     --primary-title: 2.25rem;
     --fifth-title: 1.35rem;
@@ -670,4 +670,4 @@ html.lenis body {
   .see-project__link {
     margin-bottom: var(--see-project-link-mg-bttm); }
   .showcase__cards {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); } }
