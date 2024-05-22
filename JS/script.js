@@ -75,7 +75,7 @@ const carouselCardTrigger = function (cards) {
 
 // GET Carousel
 const getCarousel = async function () {
-  const result = await fetch("../JSON/project.json");
+  const result = await fetch("JSON/project.json");
   const r = await result.json();
 
   swiperBox.innerHTML = r
@@ -86,7 +86,7 @@ const getCarousel = async function () {
       return `
   <li class="carousel__card swiper-slide" data-projectID="${item.projectID}">
     <div class="carousel__img">
-      <img src="../${item.projectImg}" alt="" />
+      <img src="${item.projectImg}" alt="" />
     </div>
     <div class="carousel__txt">
       <div class="carousel__sub-txt grid">
