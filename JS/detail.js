@@ -26,9 +26,10 @@ const getCarousel = async function () {
   const ourCard = r.filter((item) => {
     return item.projectId == id;
   });
-  const [ourCardImg] = ourCard;
+  const [ourCardobj] = ourCard;
 
-  detailImagebox.style.backgroundImage = `url(../../${ourCardImg.realImg})`;
+  detailImagebox.style.backgroundImage = `url(../../${ourCardobj.realImg})`;
+  document.title = `${ourCardobj.projectName} | Pratik Kesharwani`;
   detailTxtbox.innerHTML = ourCard
     .map((item) => {
       return `<div class="detail__sub-txt--one grid">
