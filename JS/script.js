@@ -260,7 +260,7 @@ const tl = gsap.timeline({
     trigger: ".about__section",
     start: "top center",
     markers: false,
-    duration: 1.5,
+    duration: 1,
   },
 });
 
@@ -284,21 +284,21 @@ gsap.set(textTwo.lines, {
 tl.to(textOne.lines, {
   y: 0,
   opacity: 1,
-  stagger: 0.25,
+  stagger: 0.15,
   ease: "sine.out",
 });
 
 tl.to(skills, {
   x: 0,
   opacity: 1,
-  stagger: 0.25,
+  stagger: 0.15,
   ease: "sine.out",
 });
 
 tl.to(textTwo.lines, {
   y: 0,
   opacity: 1,
-  stagger: 0.25,
+  stagger: 0.15,
   ease: "sine.out",
 });
 // --------------------------------
