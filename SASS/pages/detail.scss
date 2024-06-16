@@ -57,6 +57,7 @@
     a > * {
       font-size: var(--detail-link-icon-txt-fs);
       color: var(--detail-link-icon-clr);
+      -webkit-tap-highlight-color: transparent;
     }
   }
 

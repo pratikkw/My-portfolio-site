@@ -57,6 +57,7 @@
     position: absolute;
     top: var(--bulb-top);
     left: var(--bulb-left);
+    -webkit-tap-highlight-color: transparent;
   }
 
   &__txt {
@@ -89,6 +90,7 @@
       color: var(--soc-link-text-clr);
       font-weight: 400;
       border-bottom: 1px solid var(--soc-link-border-clr);
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }

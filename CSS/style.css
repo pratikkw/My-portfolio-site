@@ -20,7 +20,8 @@ button {
   border: none;
   outline: none;
   background: none;
-  font: inherit; }
+  font: inherit;
+  -webkit-tap-highlight-color: transparent; }
 
 input,
 label,
@@ -170,7 +171,8 @@ html.lenis body {
     height: var(--bulb-height);
     position: absolute;
     top: var(--bulb-top);
-    left: var(--bulb-left); }
+    left: var(--bulb-left);
+    -webkit-tap-highlight-color: transparent; }
   .intro__txt {
     gap: var(--intro-txt-gap);
     justify-items: flex-start;
@@ -190,7 +192,8 @@ html.lenis body {
     .intro__link .link {
       color: var(--soc-link-text-clr);
       font-weight: 400;
-      border-bottom: 1px solid var(--soc-link-border-clr); }
+      border-bottom: 1px solid var(--soc-link-border-clr);
+      -webkit-tap-highlight-color: transparent; }
 
 .others {
   position: relative;
@@ -264,9 +267,11 @@ html.lenis body {
   .project__header_subbox {
     justify-content: space-between; }
 
-.icon__box > * {
-  font-size: var(--darkmode-fs);
-  cursor: pointer; }
+.icon__box {
+  -webkit-tap-highlight-color: transparent; }
+  .icon__box > * {
+    font-size: var(--darkmode-fs);
+    cursor: pointer; }
 
 .showcase {
   --showcase-padding: 1.5rem 1.5rem;
@@ -320,7 +325,8 @@ html.lenis body {
     gap: var(--detail-links-gap); }
     .detail__links a > * {
       font-size: var(--detail-link-icon-txt-fs);
-      color: var(--detail-link-icon-clr); }
+      color: var(--detail-link-icon-clr);
+      -webkit-tap-highlight-color: transparent; }
   .detail__lists {
     gap: var(--detail-lists-gap);
     margin-top: var(--detail-lists-margin-top); }
@@ -370,7 +376,8 @@ html.lenis body {
 
 .see-project__btn {
   font-size: var(--see-all-project-fs);
-  background-color: var(--project-btn-bk-clr); }
+  background-color: var(--project-btn-bk-clr);
+  -webkit-tap-highlight-color: transparent; }
 
 .btn {
   color: var(--btn-text-clr);
@@ -427,7 +434,8 @@ html.lenis body {
     z-index: 30;
     justify-content: flex-end; }
   .carousel__link {
-    opacity: 1; }
+    opacity: 1;
+    -webkit-tap-highlight-color: transparent; }
   .carousel__icon {
     font-size: var(--carousel-icon-fs); }
 

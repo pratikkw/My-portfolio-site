@@ -6,6 +6,7 @@
 .see-project__btn {
   font-size: var(--see-all-project-fs);
   background-color: var(--project-btn-bk-clr);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn {
