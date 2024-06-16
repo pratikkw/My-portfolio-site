@@ -50,7 +50,7 @@
     "realImg": "RealImage/abovesky.webp",
     "siteLink": "https://abovesky.netlify.app/",
     "gitLink": "https://github.com/pratikkw/AboveSky",
-    "featureProject": true,
+    "featureProject": false,
     "date": "15/10/23",
     "show": true
   },
@@ -94,6 +94,34 @@
     "gitLink": "https://github.com/pratikkw/E-commerce-store-page",
     "featureProject": true,
     "date": "7/1/24",
+    "show": true
+  },
+
+  {
+    "projectId": 7,
+    "projectName": "Pong Game",
+    "desc": "This project is a static e-commerce webpage where users can browse products, add items to their cart, and remove items as needed. Click on cart button to see their products.",
+    "about": "<p class='para--secondary'>This project is a simple yet functional e-commerce page developed using HTML, CSS & JavaScript. Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>Used localSotrage, So, if you refresh the page your item will be there.</li> <li class='para--secondary'>Checkout Slider.</li> </ul></p>",
+    "projectImg": "ProjectImg/pongGame.webp",
+    "realImg": "RealImage/ourPongGame.webp",
+    "siteLink": "https://ponggamee.netlify.app/",
+    "gitLink": "https://github.com/pratikkw/PongGame",
+    "featureProject": true,
+    "date": "15/6/24",
+    "show": true
+  },
+
+  {
+    "projectId": 8,
+    "projectName": "Tic Tac Toe",
+    "desc": "This project is a static e-commerce webpage where users can browse products, add items to their cart, and remove items as needed. Click on cart button to see their products.",
+    "about": "<p class='para--secondary'>This project is a simple yet functional e-commerce page developed using HTML, CSS & JavaScript. Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>Used localSotrage, So, if you refresh the page your item will be there.</li> <li class='para--secondary'>Checkout Slider.</li> </ul></p>",
+    "projectImg": "ProjectImg/tic-tac-toe-unplash.webp",
+    "realImg": "RealImage/tic-tac-toe-netlify.png",
+    "siteLink": "https://tic-tac-toe-gmee.netlify.app/",
+    "gitLink": "https://github.com/pratikkw/Tic-Tac-Toe",
+    "featureProject": true,
+    "date": "17/6/24",
     "show": true
   }
 ]
