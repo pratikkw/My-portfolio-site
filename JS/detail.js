@@ -28,7 +28,7 @@ const getCarousel = async function () {
   });
   const [ourCardobj] = ourCard;
 
-  detailImagebox.style.backgroundImage = `url(../../${ourCardobj.realImg})`;
+  detailImagebox.style.backgroundImage = `url(../${ourCardobj.realImg})`;
   document.title = `${ourCardobj.projectName} | Pratik Kesharwani`;
   detailTxtbox.innerHTML = ourCard
     .map((item) => {
