@@ -103,7 +103,7 @@
     "desc": "This project is a static e-commerce webpage where users can browse products, add items to their cart, and remove items as needed. Click on cart button to see their products.",
     "about": "<p class='para--secondary'>This project is a simple yet functional e-commerce page developed using HTML, CSS & JavaScript. Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>Used localSotrage, So, if you refresh the page your item will be there.</li> <li class='para--secondary'>Checkout Slider.</li> </ul></p>",
     "projectImg": "ProjectImg/pongGame.webp",
-    "realImg": "RealImage/ourPongGame.webp",
+    "realImg": "RealImage/ourPongGame.png",
     "siteLink": "https://ponggamee.netlify.app/",
     "gitLink": "https://github.com/pratikkw/PongGame",
     "featureProject": true,
