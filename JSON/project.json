@@ -114,8 +114,8 @@
   {
     "projectId": 8,
     "projectName": "Tic Tac Toe",
-    "desc": "This project is a static e-commerce webpage where users can browse products, add items to their cart, and remove items as needed. Click on cart button to see their products.",
-    "about": "<p class='para--secondary'>This project is a simple yet functional e-commerce page developed using HTML, CSS & JavaScript. Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>Used localSotrage, So, if you refresh the page your item will be there.</li> <li class='para--secondary'>Checkout Slider.</li> </ul></p>",
+    "desc": "Experience the classic Tic Tac Toe game brought to life with modern web technologies. This game is designed using HTML, CSS & JavaScript. It is responsive design that works seamlessly across devices",
+    "about": "<p class='para--secondary'>Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>Reset & Sound Button for restart the game and mute respectively.</li> <li class='para--secondary'>Game will automatically reset after 1 second draw or someone win the game</li> </ul></p>",
     "projectImg": "ProjectImg/tic-tac-toe-unplash.webp",
     "realImg": "RealImage/tic-tac-toe-netlify.png",
     "siteLink": "https://tic-tac-toe-gmee.netlify.app/",
