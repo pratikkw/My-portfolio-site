@@ -100,8 +100,8 @@
   {
     "projectId": 7,
     "projectName": "Pong Game",
-    "desc": "This project is a static e-commerce webpage where users can browse products, add items to their cart, and remove items as needed. Click on cart button to see their products.",
-    "about": "<p class='para--secondary'>This project is a simple yet functional e-commerce page developed using HTML, CSS & JavaScript. Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>Used localSotrage, So, if you refresh the page your item will be there.</li> <li class='para--secondary'>Checkout Slider.</li> </ul></p>",
+    "desc": "Dive into the nostalgic fun of Pong, recreated with modern web technologies. This game is built using HTML, CSS & JS. Challenge a friend or play against the computer, and enjoy a smooth, responsive gaming experience that works perfectly across all devices.",
+    "about": "<p class='para--secondary'>Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>You can play against computer or human(secondplayer). Play against seconplayer is only available for mobile and Tabs</li> <li class='para--secondary'>Choose the no. of round</li> <li class='para--secondary'>There is an button for exit, pause, play, mute & help(to know about game more)</li> <li class='para--secondary'>Used Gsap libraray for animation(In text animation & Start Button). Start Button animation is only visible in computer(hover devices)</li> <li class='para--secondary'>Used window.requestAnimationFram() for changing the ball positon.</li> </ul></p>",
     "projectImg": "ProjectImg/pongGame.webp",
     "realImg": "RealImage/ourPongGame.png",
     "siteLink": "https://ponggamee.netlify.app/",

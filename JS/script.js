@@ -5,7 +5,7 @@ const preloaderTextOne = document.querySelector(".preloader__text-one");
 const preloaderTextTwo = document.querySelector(".preloader__text-two");
 const swiperBox = document.querySelector(".swiper-wrapper");
 const bulbBtn = document.querySelector(".bulb");
-const toggleAudio = new Audio("../audio/on-off-sound.mp3");
+const toggleAudio = new Audio("audio/on-off-sound.mp3");
 
 // GSAP ScrollTriger
 const carouselCardTrigger = function (cards) {
