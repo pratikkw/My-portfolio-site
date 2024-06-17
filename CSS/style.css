@@ -200,7 +200,7 @@ html.lenis body {
   grid-column: 2/4; }
 
 .profile-img {
-  background-image: url(../../Image/pratik_03.jpeg);
+  background-image: url(Image/pratik_03.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
