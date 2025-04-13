@@ -120,8 +120,22 @@
     "realImg": "RealImage/tic-tac-toe-netlify.png",
     "siteLink": "https://tic-tac-toe-gmee.netlify.app/",
     "gitLink": "https://github.com/pratikkw/Tic-Tac-Toe",
-    "featureProject": true,
+    "featureProject": false,
     "date": "17/6/24",
+    "show": true
+  },
+
+  {
+    "projectId": 9,
+    "projectName": "Sudoku Ai",
+    "desc": "Sudoku Ai is an AI-powered application that scans and analyzes Sudoku puzzles from images, detects errors, and provides accurate solutions.",
+    "about": "<p class='para--secondary'>Feature:- <ul class='detail__lists grid'> <li class='para--secondary'>Image input Support.</li> <li class='para--secondary'>Ai based digit recognition model. Model is trained on 21K datasets for high accuracy.</li> <li class='para--secondary'>Solves valid sudoku puzzles in real-time using an efficient backtracking algorithm.</li> <li class='para--secondary'>Return the solve Sudoku as a high quality image (with download option), highlighting the numbers that were originally present in the uploaded puzzle.</li> </ul></p>",
+    "projectImg": "ProjectImg/Sudoku.jpg",
+    "realImg": "RealImage/SudokuAi.png",
+    "siteLink": "https://www.sudokuai.space/",
+    "gitLink": "https://github.com/pratikkw/Sudoku-Ai",
+    "featureProject": true,
+    "date": "31/4/25",
     "show": true
   }
 ]

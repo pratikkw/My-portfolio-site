@@ -251,54 +251,54 @@ bulbBtn.addEventListener("click", changeTheme);
 // --------------------------------
 
 // TEXT Animation
-const textOne = new SplitType("#split-type", { types: "lines, words" });
-const textTwo = new SplitType("#split-type__two", { types: "lines, words" });
-const skills = document.querySelectorAll(".skill");
+// const textOne = new SplitType("#split-type", { types: "lines, words" });
+// const textTwo = new SplitType("#split-type__two", { types: "lines, words" });
+// const skills = document.querySelectorAll(".skill");
 
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".about__section",
-    start: "top center",
-    markers: false,
-    duration: 1,
-  },
-});
+// const tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".about__section",
+//     start: "top center",
+//     markers: false,
+//     duration: 1,
+//   },
+// });
 
-gsap.set(textOne.lines, {
-  y: 30,
-  opacity: 0,
-});
+// gsap.set(textOne.lines, {
+//   y: 30,
+//   opacity: 0,
+// });
 
-skills.forEach((item) => {
-  gsap.set(item, {
-    x: 100,
-    opacity: 0,
-  });
-});
+// skills.forEach((item) => {
+//   gsap.set(item, {
+//     x: 100,
+//     opacity: 0,
+//   });
+// });
 
-gsap.set(textTwo.lines, {
-  y: 30,
-  opacity: 0,
-});
+// gsap.set(textTwo.lines, {
+//   y: 30,
+//   opacity: 0,
+// });
 
-tl.to(textOne.lines, {
-  y: 0,
-  opacity: 1,
-  stagger: 0.15,
-  ease: "sine.out",
-});
+// tl.to(textOne.lines, {
+//   y: 0,
+//   opacity: 1,
+//   stagger: 0.15,
+//   ease: "sine.out",
+// });
 
-tl.to(skills, {
-  x: 0,
-  opacity: 1,
-  stagger: 0.15,
-  ease: "sine.out",
-});
+// tl.to(skills, {
+//   x: 0,
+//   opacity: 1,
+//   stagger: 0.15,
+//   ease: "sine.out",
+// });
 
-tl.to(textTwo.lines, {
-  y: 0,
-  opacity: 1,
-  stagger: 0.15,
-  ease: "sine.out",
-});
+// tl.to(textTwo.lines, {
+//   y: 0,
+//   opacity: 1,
+//   stagger: 0.15,
+//   ease: "sine.out",
+// });
 // --------------------------------
