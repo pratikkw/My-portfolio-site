@@ -8,7 +8,7 @@
     "realImg": "RealImage/starlink.webp",
     "siteLink": "https://starlinksss.netlify.app/",
     "gitLink": "https://github.com/pratikkw/Starlink",
-    "featureProject": true,
+    "featureProject": false,
     "date": "5/7/23",
     "show": true
   },
@@ -36,7 +36,7 @@
     "realImg": "RealImage/random-password.png",
     "siteLink": "https://random-password-generatorss.netlify.app/",
     "gitLink": "https://github.com/pratikkw/Random-Password-Generator-main",
-    "featureProject": true,
+    "featureProject": false,
     "date": "24/9/23",
     "show": true
   },
@@ -66,7 +66,7 @@
     "gitLink": "https://github.com/pratikkw/Where-in-the-world",
     "featureProject": false,
     "date": "5/11/23",
-    "show": false
+    "show": true
   },
 
   {
@@ -136,6 +136,20 @@
     "gitLink": "https://github.com/pratikkw/Sudoku-Ai",
     "featureProject": true,
     "date": "31/4/25",
+    "show": true
+  },
+
+  {
+    "projectId": 10,
+    "projectName": "CurrencyClock",
+    "desc": "CurrencyClock helps you understand how inflation affects your money's purchasing power over time. By entering your current amount, expected inflation rate, and future year, you can see how much your money will be worth in the future.",
+    "about": "<p class='para--secondary'><ul class='detail__lists grid'> <li class='para--secondary'>How much your money will be worth in the future.</li> <li class='para--secondary'>The loss in purchasing power due to inflation.</li> <li class='para--secondary'>A visual representation of how your money's value changes over time.</li> <li class='para--secondary'>Compare the purchasing power at different inflation rates.</li> </ul></p>",
+    "projectImg": "ProjectImg/currencyClock.jpg",
+    "realImg": "RealImage/currency_clock.png",
+    "siteLink": "https://currencyclock.netlify.app/",
+    "gitLink": "https://github.com/pratikkw/CurrencyClock",
+    "featureProject": true,
+    "date": "3/5/25",
     "show": true
   }
 ]
