@@ -129,7 +129,7 @@ const getCarousel = async function () {
     .join("");
 
   const carouselCards = document.querySelectorAll(".carousel__card");
-  carouselCardTrigger(carouselCards);
+  // carouselCardTrigger(carouselCards);
 };
 // --------------------------------
 
@@ -171,6 +171,11 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   grabCursor: true,
   speed: 600,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 
   breakpoints: {
     1199: {

@@ -92,7 +92,7 @@
     "realImg": "RealImage/e-commerce.webp",
     "siteLink": "https://e-commercees.netlify.app/",
     "gitLink": "https://github.com/pratikkw/E-commerce-store-page",
-    "featureProject": true,
+    "featureProject": false,
     "date": "7/1/24",
     "show": true
   },
@@ -150,6 +150,20 @@
     "gitLink": "https://github.com/pratikkw/CurrencyClock",
     "featureProject": true,
     "date": "3/5/25",
+    "show": true
+  },
+
+  {
+    "projectId": 11,
+    "projectName": "ChatGPT To PDF",
+    "desc": "Convert your ChatGPT conversations into beautifully formatted PDFs with ease. Save, share, or print your chats in one click.",
+    "about": "<p class='para--secondary'><ul class='detail__lists grid'> <li class='para--secondary'>Chrome Extension is Available.</li> <li class='para--secondary'>One-Click PDF Export.</li> <li class='para--secondary'>Perserves Chat Formatting.</li> <li class='para--secondary'>Secure & Private, Your conversation are never stored.</li> </ul></p>",
+    "projectImg": "ProjectImg/ChatGPT_To_PDF.jpg",
+    "realImg": "RealImage/ChatGPT_To_PDF.png",
+    "siteLink": "https://www.chatgpttopdf.space",
+    "gitLink": "https://github.com/pratikkw/ChatGPT-Chat-To-PDF",
+    "featureProject": true,
+    "date": "31/7/25",
     "show": true
   }
 ]
