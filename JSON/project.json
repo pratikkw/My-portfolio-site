@@ -92,7 +92,7 @@
     "realImg": "RealImage/e-commerce.webp",
     "siteLink": "https://e-commercees.netlify.app/",
     "gitLink": "https://github.com/pratikkw/E-commerce-store-page",
-    "featureProject": false,
+    "featureProject": true,
     "date": "7/1/24",
     "show": true
   },
@@ -162,7 +162,7 @@
     "realImg": "RealImage/ChatGPT_To_PDF.png",
     "siteLink": "https://www.chatgpttopdf.space",
     "gitLink": "https://github.com/pratikkw/ChatGPT-Chat-To-PDF",
-    "featureProject": true,
+    "featureProject": false,
     "date": "31/7/25",
     "show": false
   }
